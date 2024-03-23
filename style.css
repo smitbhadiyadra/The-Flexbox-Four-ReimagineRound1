@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: OfRegular;
+    color: #fff;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #130E0C,  #16100d);
+}
+
+@font-face {
+    font-family: EpBlack;
+    src: url(Assets/fonts/Epilogue-Black.ttf);
+}
+
+@font-face {
+    font-family: EpBold;
+    src: url(Assets/fonts/Epilogue-Bold.ttf);
+}
+
+@font-face {
+    font-family: EpSemiBold;
+    src: url(Assets/fonts/Epilogue-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: EpMedium;
+    src: url(Assets/fonts/Epilogue-Medium.ttf);
+}
+
+@font-face {
+    font-family: EpRegular;
+    src: url(Assets/fonts/Epilogue-Regular.ttf);
+}
+
+@font-face {
+    font-family: EpLight;
+    src: url(Assets/fonts/Epilogue-Light.ttf);
+}
+
+@font-face {
+    font-family: OfBlack;
+    src: url(Assets/fonts/Outfit-Black.otf);
+}
+
+@font-face {
+    font-family: OfBold;
+    src: url(Assets/fonts/Outfit-Black.otf);
+}
+
+@font-face {
+    font-family: OfSemiBold;
+    src: url(Assets/fonts/Outfit-SemiBold.otf);
+}
+
+@font-face {
+    font-family: OfMedium;
+    src: url(Assets/fonts/Outfit-Medium.otf);
+}
+
+@font-face {
+    font-family: OfRegular;
+    src: url(Assets/fonts/Outfit-Regular.otf);
+}
+
+@font-face {
+    font-family: OfLight;
+    src: url(Assets/fonts/Outfit-Light.otf);
+}
+
+
+
+
+/* Main Main Main Main Main Main Main Main Main Main Main Main Main Main
+   Main Main Main Main Main Main Main Main Main Main Main Main Main Main
+   Main Main Main Main Main Main Main Main Main Main Main Main Main Main
+   Main Main Main Main Main Main Main Main Main Main Main Main Main Main
+   Main Main Main Main Main Main Main Main Main Main Main Main Main Main
+*/
+
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    background: linear-gradient(45deg, #130E0C,  #16100d);
+}
+
+
+
+nav{
+    z-index: 99;
+    position: absolute;
+    width: 96%;
+    height: 10vh;
+    top: 2.5vh;
+    left: 2%;
+    border-radius: 50px;
+    background-color: #0000009e;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo>a>img{
+        width: 60px;
+    }
+
+    .logo>a{
+        text-decoration: none;
+        margin-left: 3vw;
+        color: #7B7B7B;
+        transition: color .5s;
+        font-family: OfLight;
+    }
+
+    .logo>.active{
+        color: #C7C7C7;
+    }
+
+    .logo>:first-child{
+        margin-right: 5vw;
+        margin-left: 1vw;
+    }
+
+    .logo>a:hover{
+        color: #C7C7C7;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons>.search{
+        width: 2.8vw;
+        height: 2.8vw;
+        padding: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: transparent;
+        outline: none;
+        border: 1.5px solid #fff;
+        cursor: pointer;
+        transition: background-color .5s;
+    }
+
+    .buttons>.search>i{
+        color: #C7C7C7;
+        font-size: 1.2vw;
+        z-index: 999;
+        transition: color .5s;
+    }
+
+    .buttons>.shop,.buttons>.login{
+        padding: .8vw 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: transparent;
+        outline: none;
+        border: 1.5px solid #fff;
+        font-size: 1vw;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: background-color .5s, color .5s;
+    }
+
+    .buttons>.search:hover, .buttons>.shop:hover, .buttons>.login:hover{
+        background-color: #fff;
+        color: #000;
+    }
+
+    .buttons>.search:hover i{
+        color: #000;
+    }
+}
+
+
+/* Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero
+   Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero
+   Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero
+   Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero
+   Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero Hero
+*/
+
+.hero{
+    width: 100%;
+    height: 120vh;
+    /* background-color: rgb(73, 39, 45); */
+    font-size: 1vw;
+    color: wheat;
+    position: relative;
+    padding: 56vh 5vw;
+
+
+    .container{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 96%;
+        height: 86%;
+        /* background-color: red; */
+        border-radius: 30px;
+        overflow: hidden;
+        opacity: .2;
+        z-index: -1;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            width: 100%;
+            height: 100%;
+            background-position: bottom;
+            background-size: cover;
+          }
+      
+          .swiper-slide img {
+            /* display: block; */
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+          } 
+
+    }
+
+    
+
+    h3{
+        margin-bottom: 4vh;
+    }
+    
+    h3>i{
+        font-size: 1vw;
+        font-family: OfLight;
+        font-weight: 100;
+        color: #D5D1CF;
+        letter-spacing: .5px;
+    }
+
+    h1{
+        font-size: 5vw;
+        font-family: OfSemiBold;
+        font-weight: 100;
+        line-height: 1;
+        color: #fff;
+        margin-bottom: 6vh;
+        letter-spacing: 1px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .buttons>.order,.buttons>.collection{
+        padding: 1.2vw 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid #fff;
+        font-size: 1vw;
+        font-weight: 300;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: background-color .5s, color .5s;
+        font-style: italic;
+    }
+    
+    .buttons>.order:hover,.buttons>.collection:hover{
+        background-color: #fff;
+        color: #000;
+        font-weight: 900;
+    }
+}
+
+
+
+
+/* section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2
+   section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2
+   section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2
+   section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2
+   section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2
+*/
+
+.section2{
+    width: 100%;
+    height: 35vh;
+    /* background-color: red; */
+    display: flex;
+    gap: 1%;
+    position: relative;
+    padding: 0 2%;
+
+    .left{
+        width: 65%;
+        height: 100%;
+        background-color: #1D1D1D;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding-left: 25%;
+
+        .box{
+            position: absolute;
+            left: 0;
+            width: 40%;
+            height: 100%;
+            /* background-color: rgba(255, 0, 0, 0.474); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .circle{
+                width: 170px;
+                height: 170px;
+                border-radius: 50%;
+                background-color: #926A54;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 90px;
+                }
+            }
+
+            .halfCircle{
+                width: 85px;
+                height: 170px;
+                background-color: purple;
+                border-radius: 0 150px 150px 0;
+                background-image: url(Assets/imgs/ringHalf.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -80px;
+            }
+
+            .overlayArrow{
+                position: absolute;
+                left: 60%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                backdrop-filter: blur(10px);
+                background: rgba(0, 0, 0, 0.4);
+                cursor: pointer;
+                transition: background .5s;
+                
+                i{
+                    font-size: 1.2vw;
+                }
+            }
+
+            .overlayArrow:hover{
+                background: rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        i{
+            font-size: 1.2vw;
+            font-weight: 100;
+            font-family: EpRegular;
+        }
+
+        h1{
+            margin-top: 3vh;
+            font-size: 4vw;
+            font-weight: 100;
+            font-family: OfSemiBold;
+            font-weight: 900;
+            line-height: .9;
+        }
+    }
+    
+    .right{
+        width: 35%;
+        height: 100%;
+        background-color: #926A54;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding-left: 4%;
+
+        i{
+            font-size: 1.2vw;
+            font-weight: 100;
+            font-family: EpRegular;
+        }
+
+        h1{
+            margin-top: 8vh;
+            font-size: 4vw;
+            font-weight: 100;
+            font-family: OfSemiBold;
+            font-weight: 900;
+            line-height: .9;
+        }
+
+        .profiles{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 10%;
+            bottom: 15%;
+            
+            .box{
+                position: relative;
+                width: 70px;
+                height: 70px;
+                background-color: pink;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: -15px;
+                border: 2px solid #fff;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+.section3{
+    width: 100%;
+    height: 100vh;
+}
