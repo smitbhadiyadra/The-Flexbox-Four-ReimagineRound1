@@ -73,7 +73,18 @@ body{
     src: url(Assets/fonts/Outfit-Light.otf);
 }
 
-
+@font-face {
+    font-family: MonospaceTypewriter;
+    src: url(Assets/fonts/MonospaceTypewriter.ttf);
+}
+@font-face {
+    font-family: de;
+    src: url(Assets/fonts/DESIGNER.otf);
+}
+@font-face {
+    font-family: be;
+    src: url(Assets/fonts/BadgerValley-Regular.ttf);
+}
 
 
 /* Main Main Main Main Main Main Main Main Main Main Main Main Main Main
@@ -251,15 +262,15 @@ nav{
     
     h3>i{
         font-size: 1vw;
-        font-family: OfLight;
+        font-family: MonospaceTypewriter;
         font-weight: 100;
         color: #D5D1CF;
         letter-spacing: .5px;
     }
 
     h1{
-        font-size: 5vw;
-        font-family: OfSemiBold;
+        font-size: 4vw;
+        font-family: be;
         font-weight: 100;
         line-height: 1;
         color: #fff;
@@ -288,6 +299,8 @@ nav{
         cursor: pointer;
         transition: background-color .5s, color .5s;
         font-style: italic;
+                font-family: MonospaceTypewriter;
+
     }
     
     .buttons>.order:hover,.buttons>.collection:hover{
@@ -461,5 +474,97 @@ nav{
 
 .section3{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
+    margin-top: 10px;
 }
+.top{
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 3vw;
+
+}
+.top-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-right button:hover{
+    background-color: #fff;
+    color: #000;
+    font-weight: 900;
+}
+.top h1{
+    font-size: 9vw;
+    font-family: OfSemiBold;
+    text-transform: uppercase;
+}
+.top i{
+    border: 2px solid beige;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 5vw;
+}
+.top button{
+    padding: 0.8vw 2vw;
+    font-size: 3vw;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.bottom{
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 0px 3vw;
+}
+.left-p {
+    width: 30%;
+}
+.left-p p{
+    font-size: 1.3vw;
+    font-weight: 100;
+    font-family: EpRegular;
+    width: 70%;
+    line-height: 2vw;
+
+}
+.right-h1 h1{
+    font-size: 9vw;
+    font-family: OfSemiBold;
+    text-transform: uppercase;
+}
+
+
+.diamond{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+.diamond-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.diamond-img img{
+   height: 20vh;
+   width: 20vh;
+   border: 2px solid white;
+   border-radius: 70px;
+   padding: 10px;
+}
+.scale{
+    scale: 1.5;
+}
+
