@@ -112,22 +112,51 @@ function section2Animation(){
 
 section2Animation();
 
-gsap.from(".section3>.up>.top>h1, .section3>.up>.top>.top-right>.img, .section3>.up>.top>.top-right>button, .section3>.up>.bottom>.left-p>p, .section3>.up>.bottom>.right-h1>h1",{
-    scrollTrigger:{
-        scroller: ".main",
-        trigger: ".section3",
-        start: "top 70%",
-        end: "bottom bottom",
-        // markers: true
-    },
-    opacity: 0,
-    duration: 1.5,
-    stagger: .1,
-    ease: "elastic.out(1, .8)",
-    x: 200
-})
 
 function section3Animation(){
+    
+    gsap.from(".section3>.up>.top>h1, .section3>.up>.top>.top-right>.img, .section3>.up>.top>.top-right>button, .section3>.up>.bottom>.left-p>p, .section3>.up>.bottom>.right-h1>h1",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section3",
+            start: "top 70%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        opacity: 0,
+        duration: 1.5,
+        stagger: .1,
+        ease: "elastic.out(1, .8)",
+        x: 200
+    })
+
+    gsap.to(".section3 .up>.top",{
+        scrollTrigger: {
+            scroller: ".main",
+            trigger: ".section3>.up>.top",
+            start: "top 15%",
+            end: "bottom 16%",
+            // markers: true,
+            scrub: 2
+        },
+        x: 100,
+        pin: "true",
+        duration: 2,
+    })
+
+    gsap.to(".section3 .up>.bottom",{
+        scrollTrigger: {
+            scroller: ".main",
+            trigger: ".section3>.up>.top",
+            start: "top 13%",
+            end: "bottom 14%",
+            // markers: true,
+            scrub: 2
+        },
+        x: -100,
+        pin: "true",
+        duration: 2,
+    })
 
     gsap.from(".section3>.diamond>hr",{
         scrollTrigger:{
@@ -171,6 +200,7 @@ function section3Animation(){
             autoAlpha: 1
             // markers: true
         },
+        y: 100,
         opacity: 0,
         duration: 2,
         stagger: {
@@ -178,6 +208,26 @@ function section3Animation(){
             amount: 0.5
         },
         scale: .5,
+        ease: "elastic.out(1, .7)",
+    })
+
+    gsap.from(".section3>.diamond>.diamond-img>.img>h2",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section3>.diamond",
+            start: "top 70%",
+            end: "bottom bottom",
+            autoAlpha: 1
+            // markers: true
+        },
+        opacity: 0,
+        duration: 2,
+        stagger: {
+            from: "center",
+            amount: 0.5
+        },
+        scale: .95,
+        y: 150, 
         ease: "elastic.out(1, .7)",
     })
 
@@ -407,14 +457,26 @@ diamondContainer.addEventListener('click', function(e) {
             from: "center",
             amount: 0.5
         },
-        duration: 1,
+        duration: 1.5,
+        ease: "elastic.out(1, .7)",
     })
     gsap.from(".section3>.diamond>hr, .section3>.diamond>.circleRight, .section3>.diamond>.circleLeft",{
         opacity: 0,
         scale: .9,
         stagger: .1,
         duration: .7, 
-        delay: 1,
+        delay: .7,
+    })
+    gsap.from(".section3>.diamond>.diamond-img>.img>h2",{
+        opacity: 0,
+        duration: 2,
+        stagger: {
+            from: "center",
+            amount: 0.5
+        },
+        scale: .5,
+        y: 50, 
+        ease: "elastic.out(1, .7)",
     })
 
 })
