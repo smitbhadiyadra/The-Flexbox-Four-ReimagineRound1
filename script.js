@@ -1,3 +1,9 @@
+
+// FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js 
+// FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js 
+// FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js 
+// FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js 
+
 function locomotiveScroll(){
 
     gsap.registerPlugin(ScrollTrigger);
@@ -25,6 +31,9 @@ function locomotiveScroll(){
 }
 
 locomotiveScroll();
+// hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
+// hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
+// hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
 
 function heroPageAnimation(){
     let tl = gsap.timeline();
@@ -66,6 +75,10 @@ function heroPageAnimation(){
 }
 
 heroPageAnimation();
+
+// section2 Animation section2 Animation section2 Animation section2 Animation  Animation section2 Animation
+// section2 Animation section2 Animation section2 Animation section2 Animation  Animation section2 Animation
+// section2 Animation section2 Animation section2 Animation section2 Animation  Animation section2 Animation
 
 
 function section2Animation(){
@@ -111,6 +124,11 @@ function section2Animation(){
 }
 
 section2Animation();
+
+// section3 Animation section3 Animation section3 Animation section3 Animation  Animation section3 Animation
+// section3 Animation section3 Animation section3 Animation section3 Animation  Animation section3 Animation
+// section3 Animation section3 Animation section3 Animation section3 Animation  Animation section3 Animation
+// section3 Animation section3 Animation section3 Animation section3 Animation  Animation section3 Animation
 
 
 function section3Animation(){
@@ -235,6 +253,10 @@ function section3Animation(){
 
 section3Animation();
 
+// section4 Animation section4 Animation section4 Animation section4 Animation  Animation section4 Animation
+// section4 Animation section4 Animation section4 Animation section4 Animation  Animation section4 Animation
+// section4 Animation section4 Animation section4 Animation section4 Animation  Animation section4 Animation
+
 
 function section4Animation(){   
     gsap.from(".section4>.top>h1, .section4>.top>h2, .section4>.top>span",{
@@ -287,6 +309,9 @@ section4Animation();
 
 
 
+// swiper js for hero page image fade swiper js for hero page image fade swiper js for hero page image fade
+// swiper js for hero page image fade swiper js for hero page image fade swiper js for hero page image fade
+// swiper js for hero page image fade swiper js for hero page image fade swiper js for hero page image fade
 
 
 var swiper = new Swiper(".hero>.container>.mySwiper", {
@@ -300,20 +325,185 @@ var swiper = new Swiper(".hero>.container>.mySwiper", {
     effect: "fade"
 });
 
+// dimond animation dimond animation dimond animation dimond adimond animation nimation dimond animation 
+// dimond animation dimond animation dimond animation dimond adimond animation nimation dimond animation 
+// dimond animation dimond animation dimond animation dimond adimond animation nimation dimond animation 
+
+let diamondContainer = document.querySelector('.diamond-img');
+
+diamondContainer.addEventListener('click', function(e) {
+    // let clicked = console.log(e.target.id);
+
+    if(e.target.id == "one"){
+        diamondContainer.innerHTML = `<div class="img" id="four">                      
+                                            <img class="four" src="Assets/imgs/princess.png" alt="">
+                                            <h2>Princess</h2>
+                                        </div>
+                                        <div class="img" id="five">                      
+                                            <img class="five" src="Assets/imgs/pear.png" alt="">
+                                            <h2>Pear</h2>
+                                        </div>
+                                        <div class="img" id="one">                      
+                                            <img class="one center" src="Assets/imgs/oval.png" alt="">
+                                            <h2 class="text">Oval</h2>
+                                        </div>
+                                        <div class="img" id="two">                      
+                                            <img class="two" src="Assets/imgs/cushion.png" alt="">
+                                            <h2>Cushion</h2>
+                                        </div>
+                                        <div class="img" id="three">                      
+                                            <img class="three" src="Assets/imgs/round.png" alt="">
+                                            <h2>Round</h2>
+                                        </div>
+                                        `
+
+    }
+
+    if(e.target.id == "two"){
+        diamondContainer.innerHTML = ` <div class="img" id="five">                      
+                                            <img class="five" src="Assets/imgs/pear.png" alt="">
+                                            <h2>Pear</h2>
+                                        </div>
+                                        <div class="img" id="one">                      
+                                            <img class="one" src="Assets/imgs/oval.png" alt="">
+                                            <h2>Oval</h2>
+                                        </div>
+                                        <div class="img" id="two">                      
+                                            <img class="two center" src="Assets/imgs/cushion.png" alt="">
+                                            <h2 class="text">Cushion</h2>
+                                        </div>
+                                        <div class="img" id="three">                      
+                                            <img class="three" src="Assets/imgs/round.png" alt="">
+                                            <h2>Round</h2>
+                                        </div>
+                                        <div class="img" id="four">                      
+                                            <img class="four" src="Assets/imgs/princess.png" alt="">
+                                            <h2>Princess</h2>
+                                        </div>
+                                        `
+    }
+
+    if(e.target.id == "three"){
+        diamondContainer.innerHTML = ` <div class="img" id="one">                      
+                                            <img class="one" src="Assets/imgs/oval.png" alt="">
+                                            <h2>Oval</h2>
+                                        </div>
+                                        <div class="img" id="two">                      
+                                            <img class="two" src="Assets/imgs/cushion.png" alt="">
+                                            <h2>Cushion</h2>
+                                        </div>
+                                        <div class="img" id="three">                      
+                                            <img class="three center" src="Assets/imgs/round.png" alt="">
+                                            <h2 class="text">Round</h2>
+                                        </div>
+                                        <div class="img" id="four">                      
+                                            <img class="four" src="Assets/imgs/princess.png" alt="">
+                                            <h2>Princess</h2>
+                                        </div>
+                                        <div class="img" id="five">                      
+                                            <img class="five" src="Assets/imgs/pear.png" alt="">
+                                            <h2>Pear</h2>
+                                        </div>
+                                        `
+    }
+
+    if(e.target.id == "four"){
+        diamondContainer.innerHTML = ` 
+                                        <div class="img" id="two">                      
+                                            <img class="two" src="Assets/imgs/cushion.png" alt="">
+                                            <h2>Cushion</h2>
+                                        </div>
+                                        <div class="img" id="three">                      
+                                            <img class="" src="Assets/imgs/round.png" alt="">
+                                            <h2>Round</h2>
+                                        </div>
+                                        <div class="img" id="four">                      
+                                            <img class="four center" src="Assets/imgs/princess.png" alt="">
+                                            <h2 class="text">Princess</h2>
+                                        </div>
+                                        <div class="img" id="five">                      
+                                            <img class="five" src="Assets/imgs/pear.png" alt="">
+                                            <h2>Pear</h2>
+                                        </div>
+                                        <div class="img" id="one">                      
+                                            <img class="one" src="Assets/imgs/oval.png" alt="">
+                                            <h2>Oval</h2>
+                                        </div>
+                                        `
+    }
+
+    if(e.target.id == "five"){
+        diamondContainer.innerHTML = ` 
+                                        <div class="img" id="three">                      
+                                            <img class="" src="Assets/imgs/round.png" alt="">
+                                            <h2>Round</h2>
+                                        </div>
+                                        <div class="img" id="four">                      
+                                            <img class="four" src="Assets/imgs/princess.png" alt="">
+                                            <h2>Princess</h2>
+                                        </div>
+                                        <div class="img" id="five">                      
+                                            <img class="five  center" src="Assets/imgs/pear.png" alt="">
+                                            <h2 class="text">Pear</h2>
+                                        </div>
+                                        <div class="img" id="one">                      
+                                            <img class="one" src="Assets/imgs/oval.png" alt="">
+                                            <h2>Oval</h2>
+                                        </div>
+                                        <div class="img" id="two">                      
+                                            <img class="two" src="Assets/imgs/cushion.png" alt="">
+                                            <h2>Cushion</h2>
+                                        </div>
+                                        `
+    }
+
+    gsap.from(".section3>.diamond>.diamond-img>.img>img",{
+        scale: .5,
+        opacity: 0,
+        stagger: {
+            from: "center",
+            amount: 0.5
+        },
+        duration: 1.5,
+        ease: "elastic.out(1, .7)",
+    })
+    gsap.from(".section3>.diamond>hr, .section3>.diamond>.circleRight, .section3>.diamond>.circleLeft",{
+        opacity: 0,
+        scale: .9,
+        stagger: .1,
+        duration: .7, 
+        delay: .7,
+    })
+    gsap.from(".section3>.diamond>.diamond-img>.img>h2",{
+        opacity: 0,
+        duration: 2,
+        stagger: {
+            from: "center",
+            amount: 0.5
+        },
+        scale: .5,
+        y: 50, 
+        ease: "elastic.out(1, .7)",
+    })
+
+})
+
+// section 4 category view animation section 4 category view animation section 4 category view animation section 4 category view animation 
+// section 4 category view animation section 4 category view animation section 4 category view animation section 4 category view animation 
+// section 4 category view animation section 4 category view animation section 4 category view animation section 4 category view animation 
 
 var swiper = new Swiper(".section4>.bottom>.mySwiper", {
     effect: "cards",
     lazy: true,
     slidesPerView: 'auto',
-    initialSlide: 3,
     allowTouchMove: false,
     autoplay: {
         delay: 1200,
     },
     speed: 1200, 
     cardsEffect: {
-        perSlideOffset: 12,
-        perSlideRotate: 6, 
+      perSlideOffset: 12,
+      perSlideRotate: 6, 
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -326,7 +516,6 @@ var swiper = new Swiper(".section4>.down>.mySwiper", {
     effect: "slide",
     allowTouchMove: false,
     watchSlidesVisibility: true,
-    initialSlide: 3,
     lazy: true,
     slidesPerView: '1',
     autoplay: {
@@ -338,163 +527,88 @@ var swiper = new Swiper(".section4>.down>.mySwiper", {
         prevEl: ".swiper-button-prev",
       },
 });
-        
 
-let diamondContainer = document.querySelector('.diamond-img');
-         
-diamondContainer.addEventListener('click', function(e) {
-            // let clicked = console.log(e.target.id);
-        
-            if(e.target.id == "one"){
-                diamondContainer.innerHTML = `<div class="img" id="four">                      
-                                                    <img class="four" src="Assets/imgs/princess.png" alt="">
-                                                    <h2>Princess</h2>
-                                                </div>
-                                                <div class="img" id="five">                      
-                                                    <img class="five" src="Assets/imgs/pear.png" alt="">
-                                                    <h2>Pear</h2>
-                                                </div>
-                                                <div class="img" id="one">                      
-                                                    <img class="one center" src="Assets/imgs/oval.png" alt="">
-                                                    <h2 class="text">Oval</h2>
-                                                </div>
-                                                <div class="img" id="two">                      
-                                                    <img class="two" src="Assets/imgs/cushion.png" alt="">
-                                                    <h2>Cushion</h2>
-                                                </div>
-                                                <div class="img" id="three">                      
-                                                    <img class="three" src="Assets/imgs/round.png" alt="">
-                                                    <h2>Round</h2>
-                                                </div>
-                                                `
-        
-            }
-        
-            if(e.target.id == "two"){
-                diamondContainer.innerHTML = ` <div class="img" id="five">                      
-                                                    <img class="five" src="Assets/imgs/pear.png" alt="">
-                                                    <h2>Pear</h2>
-                                                </div>
-                                                <div class="img" id="one">                      
-                                                    <img class="one" src="Assets/imgs/oval.png" alt="">
-                                                    <h2>Oval</h2>
-                                                </div>
-                                                <div class="img" id="two">                      
-                                                    <img class="two center" src="Assets/imgs/cushion.png" alt="">
-                                                    <h2 class="text">Cushion</h2>
-                                                </div>
-                                                <div class="img" id="three">                      
-                                                    <img class="three" src="Assets/imgs/round.png" alt="">
-                                                    <h2>Round</h2>
-                                                </div>
-                                                <div class="img" id="four">                      
-                                                    <img class="four" src="Assets/imgs/princess.png" alt="">
-                                                    <h2>Princess</h2>
-                                                </div>
-                                                `
-            }
-        
-            if(e.target.id == "three"){
-                diamondContainer.innerHTML = ` <div class="img" id="one">                      
-                                                    <img class="one" src="Assets/imgs/oval.png" alt="">
-                                                    <h2>Oval</h2>
-                                                </div>
-                                                <div class="img" id="two">                      
-                                                    <img class="two" src="Assets/imgs/cushion.png" alt="">
-                                                    <h2>Cushion</h2>
-                                                </div>
-                                                <div class="img" id="three">                      
-                                                    <img class="three center" src="Assets/imgs/round.png" alt="">
-                                                    <h2 class="text">Round</h2>
-                                                </div>
-                                                <div class="img" id="four">                      
-                                                    <img class="four" src="Assets/imgs/princess.png" alt="">
-                                                    <h2>Princess</h2>
-                                                </div>
-                                                <div class="img" id="five">                      
-                                                    <img class="five" src="Assets/imgs/pear.png" alt="">
-                                                    <h2>Pear</h2>
-                                                </div>
-                                                `
-            }
-        
-            if(e.target.id == "four"){
-                diamondContainer.innerHTML = ` 
-                                                <div class="img" id="two">                      
-                                                    <img class="two" src="Assets/imgs/cushion.png" alt="">
-                                                    <h2>Cushion</h2>
-                                                </div>
-                                                <div class="img" id="three">                      
-                                                    <img class="" src="Assets/imgs/round.png" alt="">
-                                                    <h2>Round</h2>
-                                                </div>
-                                                <div class="img" id="four">                      
-                                                    <img class="four center" src="Assets/imgs/princess.png" alt="">
-                                                    <h2 class="text">Princess</h2>
-                                                </div>
-                                                <div class="img" id="five">                      
-                                                    <img class="five" src="Assets/imgs/pear.png" alt="">
-                                                    <h2>Pear</h2>
-                                                </div>
-                                                <div class="img" id="one">                      
-                                                    <img class="one" src="Assets/imgs/oval.png" alt="">
-                                                    <h2>Oval</h2>
-                                                </div>
-                                                `
-            }
-        
-            if(e.target.id == "five"){
-                diamondContainer.innerHTML = ` 
-                                                <div class="img" id="three">                      
-                                                    <img class="" src="Assets/imgs/round.png" alt="">
-                                                    <h2>Round</h2>
-                                                </div>
-                                                <div class="img" id="four">                      
-                                                    <img class="four" src="Assets/imgs/princess.png" alt="">
-                                                    <h2>Princess</h2>
-                                                </div>
-                                                <div class="img" id="five">                      
-                                                    <img class="five  center" src="Assets/imgs/pear.png" alt="">
-                                                    <h2 class="text">Pear</h2>
-                                                </div>
-                                                <div class="img" id="one">                      
-                                                    <img class="one" src="Assets/imgs/oval.png" alt="">
-                                                    <h2>Oval</h2>
-                                                </div>
-                                                <div class="img" id="two">                      
-                                                    <img class="two" src="Assets/imgs/cushion.png" alt="">
-                                                    <h2>Cushion</h2>
-                                                </div>
-                                                `
-            }
-        
-            gsap.from(".section3>.diamond>.diamond-img>.img>img",{
-                scale: .5,
-                opacity: 0,
-                stagger: {
-                    from: "center",
-                    amount: 0.5
-                },
-                duration: 1.5,
-                ease: "elastic.out(1, .7)",
-            })
-            gsap.from(".section3>.diamond>hr, .section3>.diamond>.circleRight, .section3>.diamond>.circleLeft",{
-                opacity: 0,
-                scale: .9,
-                stagger: .1,
-                duration: .7, 
-                delay: .7,
-            })
-            gsap.from(".section3>.diamond>.diamond-img>.img>h2",{
-                opacity: 0,
-                duration: 2,
-                stagger: {
-                    from: "center",
-                    amount: 0.5
-                },
-                scale: .5,
-                y: 50, 
-                ease: "elastic.out(1, .7)",
-            })
-        
-})
+
+// section5 animation section5 animation section5 animation section5 animation 
+// section5 animation section5 animation section5 animation section5 animation 
+// section5 animation section5 animation section5 animation section5 animation 
+
+gsap.from(".section5 .top .l",{
+    x:-550,
+
+
+    scrollTrigger:{
+        scroller: ".main",
+        trigger: ".section5 .top .l",
+        start: "top 70%",
+        // end: "bottom 20%",
+        // markers: true,
+        scrub: 2
+    },
+  })
+  gsap.from(".section5 .top .r",{
+    x:1550,
+
+
+    scrollTrigger:{
+        scroller: ".main",
+        trigger: ".section5 .top .r",
+        // start: "top 70%",
+        // end: "bottom bottom",
+        // markers: true
+        scrub: 2
+    },
+  })
+
+//   section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION 
+//   section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION 
+//   section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION 
+
+
+  gsap.from(".section6  ",{
+    // y:500,
+    opacity: 0,
+    scale: 1.5  ,
+    stagger: 0.5,
+  
+
+    scrollTrigger:{
+        scroller: ".main",
+        trigger: ".section6 ",
+        start: "top 70%",
+        end: "bottom bottom",
+        // markers: true,
+        scrub: 2
+    },
+  })
+
+
+var swiper = new Swiper(".mySwiperr", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop:true,
+    coverflowEffect: {
+      rotate: 15,
+      // rotateY: 100,
+
+
+      stretch: -10,
+      depth: 10,
+      modifier:2,
+      slideShadows: true,
+    },
+   
+    pagination: {
+    //   el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+   
+  });
+
+  
