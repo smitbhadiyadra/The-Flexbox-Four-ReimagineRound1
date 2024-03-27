@@ -235,82 +235,61 @@ function section3Animation(){
 
 section3Animation();
 
-//  gsap.to(".diamond-img .c",{
-//     x:-180,
-//     scale:1.2,
-//     rotate:360,
-//     scrollTrigger: {
-//         scroller: ".main",
-//         trigger: ".diamond-img .c",
-//         start: "top 90%",
-//         end: "bottom 70%",
-//         // markers: true,
-//         scrub: 2
-//     },
-   
-// })
-// gsap.to(".diamond-img .s",{
-//     x:-180,
-//     scale:1,
-//     scrollTrigger: {
-//         scroller: ".main",
-//         trigger: ".diamond-img .s",
-//         // start: "top 20%",
-//         start: "top 90%",
 
-//         end: "bottom 70%",
-//         // markers: true,
-//         scrub: 2
-//     },
-// })
-// gsap.to(".diamond-img .w",{
-//     x:-140,
-//     scale:1,
-//     scrollTrigger: {
-//         scroller: ".main",
-//         trigger: ".diamond-img .w",
-//         // start: "top 20%",
-//         start: "top 90%",
+function section4Animation(){   
+    gsap.from(".section4>.top>h1, .section4>.top>h2, .section4>.top>span",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section4>.top>h1",
+            start: "top 70%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        opacity: 0,
+        duration: 1.5,
+        stagger: .1,
+        scale: .8,
+        ease: "elastic.out(1, .8)",
+        // x: -100
+    })
+    
+    gsap.to(".section4>.top",{
+        scrollTrigger: {
+            scroller: ".main",
+            trigger: ".section4>.top",
+            start: "top 0%",
+            end: "+=25%",
+            pin: true,
+            // markers: true,
+            scrub: 2
+        },
+        scale: .8,
+        duration: 2,
+    })
+    
+    
+    gsap.from(".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",
+            start: "top 70%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        opacity: 0,
+        duration: 2,
+        stagger: .1,
+        ease: "elastic.out(1, .8)",
+    })
+}
 
-//         end: "bottom 70%",
-//         // markers: true,
-//         scrub: 2
-//     },
-// })
+section4Animation();
 
 
-// gsap.to(".diamond-img .a",{
-//     x:730,
-//     scale:1,
-//     scrollTrigger: {
-//         scroller: ".main",
-//         trigger: ".diamond-img .a",
-//         // start: "top 20%",
-//         start: "top 90%",
 
-//         end: "bottom 70%",
-//         // markers: true,
-//         scrub: 2
-//     },
-//     // opacity: 0
-// })
 
-// gsap.to(".diamond-img .z",{
-//     x:-180,
-//     scale:1,
-//     scrollTrigger: {
-//         scroller: ".main",
-//         trigger: ".diamond-img .z",
-//         // start: "top 20%",
-//         start: "top 90%",
 
-//         end: "bottom 70%",
-//         // markers: true,
-//         scrub: 2
-//     },
-// })
-
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".hero>.container>.mySwiper", {
     fadeEffect: { crossFade: true },
     virtualTranslate: true,
     autoplay: {
@@ -480,3 +459,39 @@ diamondContainer.addEventListener('click', function(e) {
     })
 
 })
+
+var swiper = new Swiper(".section4>.bottom>.mySwiper", {
+    effect: "cards",
+    lazy: true,
+    slidesPerView: 'auto',
+    allowTouchMove: false,
+    autoplay: {
+        delay: 1200,
+    },
+    speed: 1200, 
+    cardsEffect: {
+      perSlideOffset: 12,
+      perSlideRotate: 6, 
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+
+
+var swiper = new Swiper(".section4>.down>.mySwiper", {
+    effect: "slide",
+    allowTouchMove: false,
+    watchSlidesVisibility: true,
+    lazy: true,
+    slidesPerView: '1',
+    autoplay: {
+        delay: 1200,
+    },
+    speed: 1200,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+});
