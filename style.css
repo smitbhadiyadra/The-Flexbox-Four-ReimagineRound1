@@ -1021,11 +1021,189 @@ nav{
 
 
 
+/* Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5
+   Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5
+   Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 Section5 
+*/
+.section5 {
+  width: 100%;
+  height: 30vh;
+  padding: 0 2%;
 
-.section5{
+  .top {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .l p {
+    font-size: 1rem;
+    width: 20vw;
+    text-align: start;
+  }
+  .r h1 {
+    font-size: 12rem;
+    font-family: clashSemiBold;
+  }
+}
+/* Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6
+   Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6
+   Section6 Section6 Section6 Section6 Section6 Section6 Section6 Section6 
+*/
+.section6 {
+  width: 100%;
+  height: 100vh;
+  padding: 0 2%;
+
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     height: 100vh;
-    background-color: #926A54;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 17rem;
+    height: 30rem;
+    border-radius: 100rem;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    position: relative;
+    opacity: 0.7;
+  }
+  .swiper-slide h1 {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    border: 0.7px solid rgb(146, 146, 146);
+    padding: 0.3rem 1rem;
+    font-size: 1.3rem;
+    font-family: clashLight;
+    border-radius: 30px;
+    background-color: #6c6c6c4c;
+    backdrop-filter: blur(40px);
+  }
+  .bot {
+    background-color: rgba(3, 3, 3, 0.186);
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 0px 0px 30px 30px;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bot p {
+    font-size: 1.4rem;
+    font-family: OfMedium;
+    text-shadow: 1px 1px 10px #aaaaaa;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transform: rotateX(15deg), rotateY(35deg);
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px,
+      rgba(255, 255, 255, 0.3) 0px 7px 13px -3px,
+      rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    box-shadow: rgb(0, 0, 0) 0px -50px 36px -28px inset;
+    background-position: start;
+    background-size: cover;
+  }
+  .swiper-3d .swiper-slide-shadow-right,
+  .swiper-3d .swiper-slide-shadow-left {
+    background-image: none;
+    background: #a9a9a900;
+    opacity: 0.5;
+  }
+
+  .wh1 {
+    cursor: pointer;
+  }
+  .swiper-slide .wh1:hover {
+    background-image: url("Assets/imgs/nwh1.jpg");
+  }
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.7;
+    color: white;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: orangered;
+  }
+  .swiper-slide-active {
+    transition-duration: 0ms;
+    transform: translate3d(0px, 60px, 110px) rotateX(0deg) rotateY(0deg)
+    scale(1) !important;
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .swiper-slide-next {
+    transition-duration: 0ms;
+    transform: translate3d(20px, -15px, 10px) rotateX(0deg) rotateY(-30deg) scale(0.9) !important;
+    z-index: -1;
+  }
+  .swiper-slide-prev {
+    transition-duration: 0ms;
+    transform: translate3d(-20px, -15px, 10px) rotateX(0deg) rotateY(30deg)
+      scale(0.9) !important;
+    z-index: -1;
+  }
+  .swiper-slide .swiper-slide-visible .swiper-slide-fully-visible {
+    transition-duration: 0ms;
+    transform: translate3d(40px, -40px, -40px) rotateX(0deg) rotateY(341deg)
+      scale(0.8) !important;
+    z-index: -3 !important;
+  }
+  .swiper-button-next {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    background-color: #000000;
+    background-image: url("Assets/imgs/rightArrowWhite.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    transition: background-color 0.5s, background-image 0.5s;
+    width: 80px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    content: "next";
+    opacity: 0;
+  }
+  .swiper-button-prev {
+    position: absolute;
+    left: 45%;
+    top: 95%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #c4c4c400;
+    background-image: url("Assets/imgs/rightArrowWhite.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid white;
+    background-size: 30px;
+    transform: rotate(180deg);
+    transition: background-color 0.5s, background-image 0.5s;
+  }
+  .swiper-button-prev::after,
+  .swiper-rtl .swiper-button-next::after {
+    content: "prev";
+    opacity: 0;
+  }
 }
 
 
