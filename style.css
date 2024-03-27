@@ -764,7 +764,7 @@ nav{
             font-size: 12vw;
             letter-spacing: 5px;
             color: transparent;
-            background: linear-gradient(to right, #3b3b3b, #fff);
+            background: linear-gradient(to right, #787878, #fff, #fff);
             background-clip: text;
         }
         h2{
@@ -772,7 +772,7 @@ nav{
             font-size: 12vw;
             letter-spacing: 5px;
             color: transparent;
-            background: linear-gradient(to left, #3b3b3b, #fff);
+            background: linear-gradient(to left, #787878, #fff, #fff);
             background-clip: text;
         }
 
