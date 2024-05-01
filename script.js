@@ -611,4 +611,19 @@ var swiper = new Swiper(".mySwiperr", {
    
   });
 
-  
+  //    new collection section 8
+var swiper = new Swiper(".nc>.mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+    //   el: ".swiper-pagination",
+    // type: "progressbar",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
