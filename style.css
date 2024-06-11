@@ -556,13 +556,14 @@ nav {
 
 .section3 {
   width: 100%;
-  height: 120vh;
+  height: 100%;
   margin-top: 5vh;
 
   .up {
     width: 100%;
-    height: 55%;
-    padding-top: 10vh;
+    padding: 0 0 10vh 0;
+    margin: 5vh 0 15vh 0;
+    
 
     .top {
       width: 100%;
@@ -630,7 +631,7 @@ nav {
       width: 30%;
     }
     .left-p p {
-      font-size: 1.2vw;
+      font-size: 1.6vw;
       font-weight: 100;
       font-family: clashLight;
       line-height: 1.5;
@@ -647,29 +648,27 @@ nav {
 
   .diamond {
     width: 100%;
-    height: 45vh;
+    margin: 0 0 25vw 0;
     position: relative;
     pointer-events: none;
   }
 
   hr {
     position: absolute;
-    width: 80%;
-    background-color: #fff;
+    width: 79vw;
+    background-color: #0f0e0e;
     height: 1px;
     left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
   }
 
   .diamond-img {
-    width: 70%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 5vw;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -699,8 +698,7 @@ nav {
     }
 
     img {
-      height: 22vh;
-      width: 22vh;
+      width:10vw;
       border: 2px solid #a7a6a599;
       border-radius: 50%;
       padding: 2vw;
@@ -735,23 +733,23 @@ nav {
   }
 
   .circleLeft {
-    height: 8px;
-    width: 8px;
+    height: 1vw;
+    width: 1vw;
     background-color: #fff;
     /* border-radius: 50%; */
     transform: rotate(45deg) translate(-50%, -50%);
     position: absolute;
-    top: 50.7%;
+    top: 0.4vw;
     left: 10%;
   }
   .circleRight {
-    height: 8px;
-    width: 8px;
+    height: 1vw;
+    width: 1vw;
     background-color: #fff;
     /* border-radius: 50%; */
     transform: rotate(45deg) translate(-50%, -50%);
     position: absolute;
-    top: 50.7%;
+    top: 0.4vw;
     right: 10%;
   }
 }
@@ -842,6 +840,17 @@ nav {
       transform: translate(-50%, -50%);
     }
 
+    .swiper-wrapper {
+      position: relative;
+      width: 32vw;
+      height: 60vh;
+      z-index: 1;
+      display: flex;
+      transition-property: transform;
+      transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+      box-sizing: content-box;
+  }
+
     .swiper-slide {
       display: flex;
       align-items: center;
@@ -924,8 +933,8 @@ nav {
     }
 
     .swiper-button-prev {
-      width: 80px;
-      height: 50px;
+      width: 8vw;
+      height: 6vw;
       border-radius: 50px;
       top: 50%;
       left: -85%;
@@ -933,7 +942,7 @@ nav {
       background-image: url("Assets/imgs/rightArrowWhite.png") !important;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 30px;
+      background-size: 4vw;
       transform: rotate(180deg);
       transition: background-color 0.5s, background-image 0.5s;
     }
@@ -943,17 +952,17 @@ nav {
       background-image: url("Assets/imgs/rightArrow.png") !important;
     }
     .swiper-button-next {
-      width: 80px;
-      height: 50px;
+      width: 8vw;
+      height: 6vw;
       border-radius: 50px;
       top: 50%;
       position: absolute;
-      left: 170%;
+      right: -77%;
       background-color: #000000;
       background-image: url("Assets/imgs/rightArrowWhite.png") !important;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 30px;
+      background-size:4vw;
       transition: background-color 0.5s, background-image 0.5s;
     }
     .swiper-button-next::after,
@@ -1318,6 +1327,8 @@ section8 section8 section8 section8 section8 section8 section8 section8 section8
       font-family: clashRegular;
       width: 80%;
       margin-top: 15px;
+      max-height: 31vh;
+      overflow: hidden;
     }
   }
 
@@ -1335,7 +1346,7 @@ section8 section8 section8 section8 section8 section8 section8 section8 section8
   }
   .swiper-button-next {
     position: absolute;
-    left: 50%;
+    left: 52%;
     top: 85%;
     background-color: #422f2f;
     background-image: url("Assets/imgs/rightArrowWhite.png") !important;
@@ -1343,8 +1354,8 @@ section8 section8 section8 section8 section8 section8 section8 section8 section8
     background-position: center;
     background-size: 30px;
     transition: background-color 0.5s, background-image 0.5s;
-    width: 80px;
-    height: 50px;
+    width: 9vw;
+    height: 8vh;
     border-radius: 50px;
     z-index: 6565;
   }
@@ -1355,17 +1366,17 @@ section8 section8 section8 section8 section8 section8 section8 section8 section8
   }
   .swiper-button-prev {
     position: absolute;
-    left: 45%;
+    left: 41%;
     top: 85%;
-    width: 50px;
-    height: 50px;
+    width: 5vw;
+    height: 8vh;
     border-radius: 50px;
     background-color: #b0b0b000;
     background-image: url("Assets/imgs/rightArrowWhite.png") !important;
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid white;
-    background-size: 30px;
+    background-size: 3vw;
     transform: rotate(180deg);
     transition: background-color 0.5s, background-image 0.5s;
   }
@@ -1385,6 +1396,7 @@ section9 section9 section9 section9 section9 section9 section9 section9 section9
   padding: 0 2%;
   display: flex;
   align-items: center;
+  overflow: auto;
   justify-content: space-between;
   .top {
     width: 40%;
@@ -1410,7 +1422,7 @@ section9 section9 section9 section9 section9 section9 section9 section9 section9
   .bottom {
     /* background-color: darkblue; */
     width: 60%;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1453,7 +1465,7 @@ section10 section10 section10 section10 section10 section10 section10 section10 
 
 .section10 {
   width: 100%;
-  height: 50vh;
+  height: 62vh;
   padding: 0 2%;
   display: flex;
   align-items: center;
@@ -1473,6 +1485,9 @@ section10 section10 section10 section10 section10 section10 section10 section10 
   .ri-service-line {
     color: red;
     font-size: 4rem;
+  }
+  .s10img{
+    height: 11vw;
   }
 }
 
@@ -1524,7 +1539,7 @@ section12 section12 section12 section12 section12 section12 section12 section12 
     height: 30vh;
     /* background-color: rgb(255, 135, 88); */
     h1 {
-      font-size: 5rem;
+      font-size: 4.6rem;
       font-family: clashMedium;
     }
   }
