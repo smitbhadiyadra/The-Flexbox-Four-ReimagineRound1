@@ -850,7 +850,6 @@ nav {
       transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
       box-sizing: content-box;
   }
-
     .swiper-slide {
       display: flex;
       align-items: center;
@@ -942,7 +941,7 @@ nav {
       background-image: url("Assets/imgs/rightArrowWhite.png") !important;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 4vw;
+      background-size: 30px;
       transform: rotate(180deg);
       transition: background-color 0.5s, background-image 0.5s;
     }
@@ -953,16 +952,16 @@ nav {
     }
     .swiper-button-next {
       width: 8vw;
-      height: 6vw;
+    height: 6vw;
       border-radius: 50px;
       top: 50%;
       position: absolute;
       right: -77%;
-      background-color: #000000;
+      background-size: 4vw;
       background-image: url("Assets/imgs/rightArrowWhite.png") !important;
       background-repeat: no-repeat;
       background-position: center;
-      background-size:4vw;
+      background-size: 30px;
       transition: background-color 0.5s, background-image 0.5s;
     }
     .swiper-button-next::after,
@@ -1321,6 +1320,7 @@ section8 section8 section8 section8 section8 section8 section8 section8 section8
       opacity: 0.8;
       font-family: clashRegular;
       margin-top: 15px;
+     
     }
     .upp {
       opacity: 0.8;
@@ -1367,9 +1367,9 @@ section8 section8 section8 section8 section8 section8 section8 section8 section8
   .swiper-button-prev {
     position: absolute;
     left: 41%;
-    top: 85%;
-    width: 5vw;
-    height: 8vh;
+  top: 85%;
+  width: 5vw;
+  height: 8vh;
     border-radius: 50px;
     background-color: #b0b0b000;
     background-image: url("Assets/imgs/rightArrowWhite.png") !important;
@@ -1486,9 +1486,9 @@ section10 section10 section10 section10 section10 section10 section10 section10 
     color: red;
     font-size: 4rem;
   }
-  .s10img{
-    height: 11vw;
-  }
+}
+.s10img{
+  height: 11vw;
 }
 
 /* section11 section11 section11 section11 section11 section11 section11 section11 section11 
