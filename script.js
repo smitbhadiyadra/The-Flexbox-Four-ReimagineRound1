@@ -583,7 +583,7 @@ gsap.from(".section5 .top .l",{
   })
 
 
-var swiper = new Swiper(".mySwiperr", {
+var swiper = new Swiper(".section6>.mySwiperr", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,

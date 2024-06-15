@@ -1067,11 +1067,12 @@ nav{
     background-size: cover;
     width: 17rem;
     height: 30rem;
-    border-radius: 100rem;
+    border-radius: 10px;
     background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     position: relative;
     opacity: 0.7;
+    transition: 1s;
   }
   .swiper-slide h1 {
     position: absolute;
@@ -1079,8 +1080,10 @@ nav{
     top: 5%;
     border: 0.7px solid rgb(146, 146, 146);
     padding: 0.3rem 1rem;
-    font-size: 1.3rem;
+    font-size: .8rem;
     font-family: clashLight;
+    font-weight: 300;
+    letter-spacing: 1px;
     border-radius: 30px;
     background-color: #6c6c6c4c;
     backdrop-filter: blur(40px);
@@ -1148,7 +1151,7 @@ nav{
   }
 
   .swiper-slide-next {
-    transition-duration: 0ms;
+    transition-duration: 100ms;
     transform: translate3d(20px, -15px, 10px) rotateX(0deg) rotateY(-30deg) scale(0.9) !important;
     z-index: -1;
   }
