@@ -1,8 +1,8 @@
 
-// FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js 
-// FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js 
-// FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js 
-// FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js FOr Locomotive js 
+// FOr Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
+// FOr Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
+// FOr Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
+// FOr Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
 
 function locomotiveScroll(){
 
@@ -31,6 +31,39 @@ function locomotiveScroll(){
 }
 
 locomotiveScroll();
+
+
+
+
+function firstPageAnim(){
+    var tl3 = gsap.timeline();
+
+
+    tl3.from(".text-wrapper", {
+        duration: 3,
+        // scale: 0
+    });
+    tl3.to("#preloader", {
+        duration: 1,
+        y: "-100%",
+        delay: 1.5,
+    });
+}
+
+firstPageAnim();
+
+
+
+
+
+
+
+
+
+
+
+
+
 // hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
 // hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
 // hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
@@ -43,7 +76,7 @@ function heroPageAnimation(){
         duration: 2.5,
         stagger: .06,
         y: -30,
-        delay: .3,
+        delay: 5.7,
         ease: "elastic.out(1, .5)",
     },"anime")
     .from("nav>.buttons>.search, nav>.buttons>.shop, nav>.buttons>.login",{
@@ -51,7 +84,7 @@ function heroPageAnimation(){
         duration: 2.5,
         stagger: .06,
         x: 50,
-        delay: 1.2,
+        delay: 6.7,
         ease: "elastic.out(1, .5)",
     },"anime")
     .from(".hero>.container",{
@@ -60,15 +93,15 @@ function heroPageAnimation(){
         scale: .8,
         stagger: .06,
         y: 200,
-        delay: 1,
+        delay: 6.4,
         ease: "elastic.out(.7, .7)",
     },"anime")
-    .from(".hero>h3, .hero>h1, .hero>.buttons>.order, .hero>.buttons>.collection",{
+    .from(".hero>.main-content>h3, .hero>.main-content>h1, .hero>.main-content>.buttons>.order, .hero>.main-content>.buttons>.collection",{
         opacity: 0,
         duration: 1.9,
         stagger: .08,
         y: 50,
-        delay: 1.4,
+        delay: 6.9,
         ease: "elastic.out(1, .5)",
     },"anime")
 
@@ -611,4 +644,100 @@ var swiper = new Swiper(".section6>.mySwiperr", {
    
   });
 
-  
+  //    new collection section 8
+var swiper = new Swiper(".nc>.mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+    //   el: ".swiper-pagination",
+    // type: "progressbar",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+
+
+
+
+
+
+
+// section7 Animation section7 Animation section7 Animation section7 Animation  Animation section7 Animation
+// section7 Animation section7 Animation section7 Animation section7 Animation  Animation section7 Animation
+// section7 Animation section7 Animation section7 Animation section7 Animation  Animation section2 Animation
+// section7 Animation section7 Animation section7 Animation section7 Animation  Animation section2 Animation
+// section7 Animation section7 Animation section7 Animation section7 Animation  Animation section2 Animation
+
+
+function section7Animation(){
+    gsap.from(".section7>.top>h1, .section7>.top>p",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section7>.top>h1",
+            start: "top 70%",
+            end: "bottom bottom",
+            scrub: 2,
+            // markers: true
+        },
+        opacity: 0,
+        duration: 1.5,
+        stagger: .1,
+        // ease: "elastic.out(.2, 2)",
+        x: -100
+    })
+    
+    gsap.from(".section7>.bot>h1",{
+        scrollTrigger: {
+            scroller: ".main",
+            trigger: ".section7>.bot>h1",
+            start: "top 65%",
+            end: "bottom bottom",
+            // markers: true,
+            scrub:2
+        },
+        opacity: 0,
+        duration: 1.5,
+        stagger: .1,
+        // ease: "elastic.out(.2, 2)",
+        x: 100
+    })
+}
+
+section7Animation();
+
+
+
+
+// section8 Animation section8 Animation section8 Animation section8 Animation  Animation section8 Animation
+// section8 Animation section8 Animation section8 Animation section8 Animation  Animation section8 Animation
+// section8 Animation section8 Animation section8 Animation section8 Animation  Animation section8 Animation
+// section8 Animation section8 Animation section8 Animation section8 Animation  Animation section8 Animation
+
+
+function section8Animation(){
+    gsap.from(".section8>.nc img",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section8 img",
+            start: "top 70%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        duration: 1,
+        stagger: .1,
+        // ease: "elastic.out(1, .8)",
+        scale: 1.4
+    })
+}
+
+section8Animation();
+
+
+
+

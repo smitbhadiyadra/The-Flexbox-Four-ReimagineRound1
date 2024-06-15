@@ -1,0 +1,590 @@
+@media (max-width:1200px) {
+  .section5 .top .l p {
+    font-size: 1.5vw;
+    width: 27vw;
+    text-align: start;
+  }
+
+  .section6{
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    .swiper{
+      height: 68vw;
+    }
+    .swiper-slide {
+      height: 40vw;
+      width: 28vw;
+    }
+    .swiper-button-next {
+      margin-left: 3.5vw;
+    }
+  }
+
+}
+
+@media(max-width:1100px){
+  .section9 .top p{
+    font-size: 1.3rem;
+  }
+  .section9 .top i{
+    font-size: 3.5rem;
+  }
+  .section9 .bottom .links{
+    gap: 1rem;
+    a{
+      font-size: 0.9rem;
+      padding: 0.8rem 1rem;
+    }
+  }
+  .section10{
+    height: 50vh;
+    h3{
+      font-size: 2.5rem;
+    }
+    .s10img{
+      height: 8vw;
+    }
+    .ri-vip-diamond-fill {
+      color: orangered;
+      font-size: 3.5rem;
+    }
+    .ri-service-line {
+      color: red;
+      font-size: 3.5rem;
+    }
+  }
+  .section12 .topp h1{
+    font-size: 3.4rem;
+  }
+  .section12 .mid .l{
+    width: 45%;
+  }
+  .section12 .mid .r p{
+    font-size: 1.7rem;
+  }
+  .section12 .bot .right a{
+    padding: 0.8rem 1rem;
+  }
+  .section12 .bot .left p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:800px) {
+
+  .main{
+    position: relative;
+    z-index: 1;
+  }
+  
+  .navigation{
+    padding: 0;
+  }
+    nav{
+      width: 100%;
+      padding: 1rem;
+        .logo > a {
+            display: none;
+        }
+
+        .buttons{
+          padding-right: 3vw;
+        }
+        .search,.shop,.login{
+          width: 15vw;
+          height: 5vh;
+          font-size: 8vw;
+          padding: 0;
+        }
+    }
+    .hero{
+        width: 100%;
+        padding: 0;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            
+            width: 95%;
+            height: 100%;
+           
+            /* background-color: red; */
+            border-radius: 30px;
+            overflow: hidden;
+            opacity: 0.7;
+            z-index: 9;
+        
+            .swiper {
+              width: 100%;
+              height: 100%;
+            }
+        
+            .swiper-slide {
+              width: 100%;
+              height: 100%;
+              background-position: bottom;
+              background-size: cover;
+            }
+        
+            .swiper-slide img {
+              /* display: block; */
+              width: 100%;
+              object-position: center;
+              object-fit: cover;
+            }
+          }
+    }
+    .swiper-slide video {
+      /* display: block; */
+      width: 100%;
+      height: 100vh !important;
+      object-position: center !important;
+      object-fit: cover !important;
+      /* background: url('Assets/imgs/mobile.mp4'); */
+    }
+    .section2{
+      .left{
+        height: 70%;
+        /* width: 100%; */
+      }
+      .box{
+        width: 50%;
+        height: 50%;
+        /* background-color: darkblue; */
+      }
+      .circle{
+        width: 50px;
+        height: 50px;
+        
+      }
+      .overlayArrow{
+      display: none;
+      }
+      .right{
+        height: 70%;
+        i{
+          font-size: 1rem;
+        }
+        h1{
+          font-size: 2rem;
+        }
+        
+        .profiles{
+          .box{
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+}
+
+.section5 .top{
+  .l p {
+    display: none;  
+  }
+  .r h1{
+    margin-top: 10vw;
+  }
+}
+
+.section6{
+  padding-bottom: 8vw;
+  padding-top: 20vw;
+  .swiper{
+    height: 100vw;
+  }  
+  .swiper-slide {
+    height: 65vw;
+    width: 45vw;
+  }
+  .swiper-button-next{
+    margin-left: 3vw;
+  }
+  .swiper-button-prev{
+    margin-left: -3vw;
+  }
+}
+
+.section7{
+  .top p{
+    font-size: 2vw;
+  }
+}
+.section8 .swiper-button-prev{
+  left: 38%;
+  top: 85%;
+  width: 9vw;
+  height: 8vh;
+  background-size: 5vw;
+}
+.section8 .box .upp{
+  display: none;
+}
+
+.section9 .bottom .links{
+  gap: 0.5rem;
+}
+.section10{
+  height: 50vh;
+  h3{
+    font-size: 2rem;
+  }
+  .s10img{
+    height: 9vw;
+  }
+  .ri-vip-diamond-fill {
+    color: orangered;
+    font-size: 3rem;
+  }
+  .ri-service-line {
+    color: red;
+    font-size: 3rem;
+  }
+}
+
+.section11{
+    height: 25vh;
+  i {
+    font-size: 5rem;
+    font-weight: 50;
+  }
+}
+.section12 .topp h1{
+  font-size: 2.6rem;
+}
+
+.section12 .bot .right a {
+  padding: 0.4rem 0.5rem;
+}
+.section12 .mid .r p {
+  font-size: 1.4rem;
+}
+
+}
+
+@media (max-width:750px){
+    
+    .up .left-p {
+      width: 30%;
+    }
+    .up .left-p p {
+      font-size: 1.3vw;
+      font-weight: 100;
+      font-family: clashLight;
+      line-height: 1.5;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      opacity: 0.7;
+      text-transform: capitalize;
+    }
+    .up .top > h1{
+      font-size: 0vw;
+    }
+
+    /* .section4 .bottom .swiper-wrapper  {
+      width: 30vw;
+      height:30vh;
+    } */
+
+    .section9 .top p{
+      font-size: 1.3rem;
+    }
+    .section9 .top i{
+      font-size: 2.5rem;
+    }
+    .section9 .bottom .links{
+      gap: 0.8rem;
+      a{
+        font-size: 0.8rem;
+        padding: 0.6rem 0.6rem;
+      }
+    }
+    
+    .section11 .brand img {
+      height: 45px;
+    }
+    .section11 i{
+      font-size: 4rem;
+      font-weight: 50;
+    }
+  }
+
+  @media (max-width: 645px){
+  
+      .section3 .diamond{
+        width: 100%;
+        margin: 0 0 30vw 0;
+        position: relative;
+        pointer-events: none;
+      }
+      .section3 .up .top > .top-right > .img {
+        width: 50px;
+        height: 50px;
+        background-size: 20px;
+      }
+
+      .section4 .top h1 {
+        font-size: 11vw;
+      }
+      .section4 .top h2 {
+        font-size: 11vw;
+      }
+
+      .section4 .top span{
+        width: 60px;
+        height: 60px;
+      }
+      .section4 .top #span1 {
+        left: 62.5%;
+        top: 57%;
+      }
+      .section4 .top #span2 {
+        left: 65%;
+        top: 57%;
+      }
+  
+      .section8 .swiper-button-prev{
+        left: 38%;
+        top: 85%;
+        width: 9vw;
+        height: 8vh;
+        background-size: 5vw;
+      }
+      
+      .section11 .brand img:nth-of-type(2){
+        display: none;
+      }
+      .section11 .brand i:nth-of-type(2){
+        display: none;
+      }
+      .section12 {
+        height: 60vh;
+      }
+
+      .section12 .mid .r p {
+        font-size: 1.2rem;
+        margin: 0 0 0 3rem;
+    }
+      .section12 .bot .right a:nth-of-type(2) {
+        display: none;
+      }
+      .section12 .bot .right a:nth-of-type(1) {
+        display: none;
+      }
+      .section12 .topp h1{
+        font-size: 2rem;
+      }
+  }
+  
+
+  @media (max-width: 500px) {
+    .section2{
+      flex-direction: column;
+      /* background-color: saddlebrown; */
+      height: 50vh;
+      margin-top: 1rem;
+      .left{
+        height: 70%;
+        width: 100%;
+        
+      }
+      .box{
+        width: 50%;
+        height: 50%;
+        /* background-color: darkblue; */
+      }
+      .circle{
+        width: 30px;
+        height: 30px;
+        display: none;
+        
+      }
+      .c{
+  
+        i{
+          font-size: 1rem;
+        }
+        h1{
+          font-size: 1.5rem;
+        }
+      }
+        .overlayArrow{
+       display: none;
+      }
+      .right{
+        width: 100%;
+        height: 70%;
+        i{
+          font-size: 2rem;
+        }
+        h1{
+          font-size: 2.5rem;
+        }
+        
+        .profiles{
+          .box{
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+     
+      
+      
+  }
+  .section3 .diamond{
+    width: 100%;
+    margin: 0 0 40vw 0;
+    position: relative;
+    pointer-events: none;
+  }
+  .section3 .up{
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 5vh 0 15vh 0;
+  }
+
+  .section4 .top h1 {
+    font-size: 10vw;
+  }
+  .section4 .top h2 {
+    font-size: 10vw;
+  }
+  .section4 .top span{
+    width: 50px;
+    height: 50px;
+  }
+  .section4 .top #span1 {
+    left: 60.5%;
+    top: 55%;
+  }
+  .section4 .top #span2 {
+    left: 64%;
+    top: 55%;
+  }
+  .section4 .bottom .swiper-wrapper  {
+    width: 40vw;
+    height:58vh;
+  }
+
+  .section5 .top{
+    .l p {
+      display: none;  
+    }
+  }
+
+
+.section6{
+  .swiper{
+    height: 150vw;
+  }
+
+  .swiper-slide {
+    height: 100vw;
+    width: 70vw;
+  }
+
+  .swiper-button-next{
+    margin-left: 5vw;
+  }
+
+  .swiper-button-prev{
+    margin-left: -6vw;
+  }
+}
+
+.section7{
+  .top p{
+    display: none;
+  }
+  .top h1{
+    margin-left: 7vw;
+    font-size: 10vw;
+  }
+  .bot h1{
+    margin-right: 9vw;
+    font-size: 11vw;
+  }
+}
+
+  .section8 .swiper-button-prev{
+    width: 15vw;
+    height: 8vh;
+    background-size: 7vw;
+    left: 33%;
+  }
+  .section8 .swiper-button-next {
+    width: 16vw;
+    height: 8vh;
+  }
+  .section8 .box h1 {
+    font-size: 2rem;
+  }
+  .section8 .box h4 {
+    display: none;
+  }
+
+  .section9 .top p{
+    font-size: 1.15rem;
+  }
+  .section9 .top i{
+    font-size: 2rem;
+  }
+  .section9 .bottom .links{
+    gap: 0.8rem;
+    a{
+      font-size: 0.8rem;
+      padding: 0.4rem 0.6rem;
+    }
+  }
+  .section9 .bottom {
+    height: 38vh;
+  }
+  .section10{
+    height: 40vh;
+    margin-top: 1rem;
+    h3{
+      font-size: 1.5rem;
+    }
+    .s10img{
+      height: 8vw;
+    }
+    .ri-vip-diamond-fill {
+      color: orangered;
+      font-size: 2.5rem;
+    }
+    .ri-service-line {
+      color: red;
+      font-size: 2.5rem;
+    }
+  }
+  .section11 .brand img {
+    height: 30px;
+  }
+  .section11{
+    height: 14vh;
+  }
+  .section11 i{
+    font-size: 3rem;
+    font-weight: 50;
+  }
+  
+  .section12 .mid .r{
+    display: none;
+  }
+  .section12 .mid .l{
+    width: 100%;
+  }
+  .section12 .topp{
+    height: 12vh;
+  }
+  .section12 .topp h1 {
+    font-size: 1.4rem;
+}
+.section12 .bot{
+  display: flex;
+  flex-direction: column;
+}
+}
