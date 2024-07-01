@@ -62,8 +62,6 @@ firstPageAnim();
 
 
 
-
-
 // hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
 // hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
 // hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
@@ -76,7 +74,7 @@ function heroPageAnimation(){
         duration: 2.5,
         stagger: .06,
         y: -30,
-        delay: 5.7,
+        delay: 5.4,
         ease: "elastic.out(1, .5)",
     },"anime")
     .from("nav>.buttons>.search, nav>.buttons>.shop, nav>.buttons>.login",{
@@ -84,7 +82,7 @@ function heroPageAnimation(){
         duration: 2.5,
         stagger: .06,
         x: 50,
-        delay: 6.7,
+        delay: 6.5,
         ease: "elastic.out(1, .5)",
     },"anime")
     .from(".hero>.container",{
@@ -101,7 +99,7 @@ function heroPageAnimation(){
         duration: 1.9,
         stagger: .08,
         y: 50,
-        delay: 6.9,
+        delay: 6.7,
         ease: "elastic.out(1, .5)",
     },"anime")
 
@@ -618,7 +616,7 @@ gsap.from(".section5 .top .l",{
 
 var swiper = new Swiper(".section6>.mySwiperr", {
     effect: "coverflow",
-    grabCursor: true,
+    grabCursor: false,
     centeredSlides: true,
     slidesPerView: "auto",
     loop:true,
@@ -676,7 +674,7 @@ var swiper = new Swiper(".nc>.mySwiper", {
 
 
 function section7Animation(){
-    gsap.from(".section7>.top>h1, .section7>.top>p",{
+    gsap.to(".section7>.top>h1, .section7>.top>p",{
         scrollTrigger:{
             scroller: ".main",
             trigger: ".section7>.top>h1",
@@ -685,31 +683,32 @@ function section7Animation(){
             scrub: 2,
             // markers: true
         },
-        opacity: 0,
-        duration: 1.5,
+        // opacity: 0,
+        duration: 2,
         stagger: .1,
-        // ease: "elastic.out(.2, 2)",
-        x: -100
+        ease: "easeInslow(0.7,0.7,false)",
+        x: 100,
+        // scale: .8
     })
     
-    gsap.from(".section7>.bot>h1",{
+    gsap.to(".section7>.bot>h1",{
         scrollTrigger: {
             scroller: ".main",
             trigger: ".section7>.bot>h1",
-            start: "top 65%",
+            start: "top 75%",
             end: "bottom bottom",
             // markers: true,
             scrub:2
         },
-        opacity: 0,
-        duration: 1.5,
-        stagger: .1,
-        // ease: "elastic.out(.2, 2)",
-        x: 100
+        // opacity: 0,
+        duration: 2,
+        ease: "slow(0.7,0.7,false)",
+        x: -100,
+        // scale: .8
     })
 }
 
-section7Animation();
+// section7Animation();
 
 
 
@@ -731,8 +730,23 @@ function section8Animation(){
         },
         duration: 1,
         stagger: .1,
+        opacity: 0.3
         // ease: "elastic.out(1, .8)",
-        scale: 1.4
+    })
+
+    gsap.from(".section8>.nc .box>.up, .section8>.nc .box>h1, .section8>.nc .box>h4, .section8>.nc .box>p",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section8 .box>p",
+            start: "top 60%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        x: 100,
+        duration: 1,
+        stagger: .1,
+        opacity: 0,
+        // ease: "elastic.out(1, .8)",
     })
 }
 
@@ -741,3 +755,200 @@ section8Animation();
 
 
 
+// section9 Animation section9 Animation section9 Animation section9 Animation  Animation section9 Animation
+// section9 Animation section9 Animation section9 Animation section9 Animation  Animation section9 Animation
+// section9 Animation section9 Animation section9 Animation section9 Animation  Animation section9 Animation
+// section9 Animation section9 Animation section9 Animation section9 Animation  Animation section9 Animation
+
+
+
+function section9Animation(){
+
+    gsap.from(".section9>.top>p",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section9>.top",
+            start: "top 65%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        y: 100,
+        duration: 1,
+        stagger: .2,
+        opacity: 0,
+        // ease: "elastic.out(1, .8)",
+    })
+
+    gsap.from(".section9>.bottom>.links ",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section9>.bottom",
+            start: "top 65%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        y: -100,
+        duration: 2,
+        stagger: .2,
+        opacity: 0,
+        ease: "elastic.out(1, .5)",
+    })
+
+}
+
+section9Animation();
+
+
+
+
+// section10 Animation section10 Animation section10 Animation section10 Animation  Animation section10 Animation
+// section10 Animation section10 Animation section10 Animation section10 Animation  Animation section10 Animation
+// section10 Animation section10 Animation section10 Animation section10 Animation  Animation section10 Animation
+// section10 Animation section10 Animation section10 Animation section10 Animation  Animation section10 Animation
+
+
+function section10Animation(){
+
+    gsap.from(".section10>h3>img, .section10>h3>i, .section10>h3",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section10>h3",
+            start: "top 65%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        y: 100,
+        duration: 2,
+        stagger: .1,
+        opacity: 0,
+        ease: "elastic.out(1, .6)",
+    })
+
+}
+
+section10Animation();
+
+
+
+// section11 Animation section11 Animation section11 Animation section11 Animation  Animation section11 Animation
+// section11 Animation section11 Animation section11 Animation section11 Animation  Animation section11 Animation
+// section11 Animation section11 Animation section11 Animation section11 Animation  Animation section11 Animation
+// section11 Animation section11 Animation section11 Animation section11 Animation  Animation section11 Animation
+
+
+function section11Animation(){
+
+    gsap.from(".section11>.brand>img",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section11>.brand",
+            start: "top 65%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        x: 100,
+        duration: 2,
+        stagger: .3,
+        opacity: 0,
+        ease: "elastic.out(1, .6)",
+    }, "11")
+
+    gsap.from(".section11>.brand>i",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section11>.brand",
+            start: "top 65%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        x: 100,
+        duration: 2,
+        stagger: .3,
+        opacity: 0,
+        delay: .2,
+        ease: "elastic.out(1, .4)",
+    }, "11")
+
+}
+
+section11Animation();
+
+
+
+
+
+
+// section12 Animation section12 Animation section12 Animation section12 Animation  Animation section12 Animation
+// section12 Animation section12 Animation section12 Animation section12 Animation  Animation section12 Animation
+// section12 Animation section12 Animation section12 Animation section12 Animation  Animation section12 Animation
+// section12 Animation section12 Animation section12 Animation section12 Animation  Animation section12 Animation
+
+
+function section12Animation(){
+
+    gsap.from(".section12>.topp span",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section12>.topp",
+            start: "top 65%",
+            end: "bottom 95%",
+            // markers: true
+        },
+        x: 100,
+        duration: 2.5,
+        stagger: .15,
+        opacity: 0,
+        ease: "elastic.out(1, .4)",
+    })
+
+    gsap.from(".section12>.mid>.l>.input-box",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section12>.mid>.l",
+            start: "top 65%",
+            end: "bottom 98%",
+            // markers: true
+        },
+        width: "10px",
+        duration: 2,
+        // stagger: .1,
+        opacity: 0,
+        delay: .2,
+        ease: "elastic.out(1, .6)",
+    })
+
+    gsap.from(".section12>.mid>.r>p",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section12>.mid>.r",
+            start: "top 65%",
+            end: "bottom 98%",
+            // markers: true
+        },
+        x: 150,
+        duration: 2,
+        // stagger: .1,
+        opacity: 0,
+        delay: .2,
+        ease: "elastic.out(1, .6)",
+    })
+
+    gsap.from(".section12>.bot>.left>p, .section12>.bot>.right ",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section12>.bot>.left",
+            start: "top 95%",
+            end: "bottom 98%",
+            // markers: true
+        },
+        x: 150,
+        duration: 2,
+        stagger: .2,
+        opacity: 0,
+        delay: .2,
+        ease: "elastic.out(1, .6)",
+    })
+
+}
+
+section12Animation();
