@@ -237,6 +237,7 @@ html{
 .navigation {
   width: 100%;
   height: 15vh;
+  /* background-color: saddlebrown; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,9 +246,13 @@ html{
 
 nav {
   z-index: 99;
+  /* position: absolute; */
   width: 100%;
   height: 10vh;
+  /* top: 2.5vh;
+  left: 2%; */
   border-radius: 50px;
+  /* background-color: #ee4343c6; */
   background-color: #00000057;
 
   backdrop-filter: blur(8px);
@@ -255,8 +260,10 @@ nav {
   justify-content: space-between;
   align-items: center;
 
+  /* padding: 0 1vw; */
   padding: 1rem 0.5rem;
 
+  /* padding: 56vh 5vw; */
 
   .logo {
     display: flex;
@@ -356,25 +363,34 @@ nav {
 .hero {
   width: 100vw;
   height: 100vh;
+  /* background-color: rgb(73, 39, 45); */
   font-size: 1vw;
   color: wheat;
   position: relative;
   z-index: 99;
+  /* padding: 56vh 5vw; */
   padding: 0rem 2rem;
   display: flex;
   align-items: start;
   justify-content: start;
 
   .container {
+    /* position: absolute; */
+    /* top: 55%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
     width: 100%;
     height: 95vh;
+    /* background-color: red; */
     border-radius: 30px;
     overflow: hidden;
+    /* opacity: 0.2; */
     z-index: 9;
 
     .swiper {
       width: 100%;
       height: 100%;
+      /* background-color: saddlebrown; */
     }
 
     .swiper-slide {
@@ -386,10 +402,15 @@ nav {
     }
 
     .swiper-slide video {
+      /* display: block; */
       width: 100%;
       object-position: cover;
       object-fit: contain;
     }
+    /* #img2{
+      background-color: #000000;
+      z-index: 45545454;
+    } */
     .black-box {
       width: 100%;
       height: 100%;
@@ -484,9 +505,14 @@ nav {
     background-color: #1d1d1d;
     border-radius: 30px;
     display: flex;
+    /* align-items: center; */
+    /* flex-direction: column; */
     justify-content: space-between;
+    /* position: relative; */
+    /* padding-left: 25%; */
     .c {
       width: 100%;
+      /* background-color: saddlebrown; */
       height: 100%;
       display: flex;
       align-items: start;
@@ -496,6 +522,7 @@ nav {
     .box {
       width: 50%;
       height: 100%;
+      /* background-color: rgba(255, 0, 0, 0.474); */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -526,9 +553,14 @@ nav {
       }
 
       .overlayArrow {
+        /* position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translate(-50%, -50%); */
         position: absolute;
         left: 18%;
         z-index: 6564;
+
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -540,10 +572,9 @@ nav {
         cursor: pointer;
         transition: background 0.5s;
 
-        i{
-          font-size: 1.7vw;
+        i {
+          font-size: 1.2vw;
         }
-
       }
 
       .overlayArrow:hover {
@@ -552,7 +583,7 @@ nav {
     }
 
     i {
-      font-size: 1.2rem;
+      font-size: 1.2vw;
       font-weight: 100;
       font-family: clashMedium;
     }
@@ -561,6 +592,7 @@ nav {
       margin-top: 3vh;
       font-size: 3.5vw;
       font-weight: 100;
+      /* font-family: OfSemiBold; */
       font-family: clashSemiBold;
       letter-spacing: 2px;
       font-weight: 900;
@@ -580,8 +612,9 @@ nav {
     padding-left: 4%;
 
     i {
-      font-size: 1.5rem;
+      font-size: 1.2vw;
       font-weight: 100;
+      /* font-family: EpRegular; */
       font-family: clashMedium;
     }
 
@@ -589,6 +622,7 @@ nav {
       margin-top: 8vh;
       font-size: 4vw;
       font-weight: 100;
+      /* font-family: OfSemiBold; */
       font-family: clashMedium;
       letter-spacing: 2px;
       font-weight: 600;
@@ -707,7 +741,7 @@ nav {
       width: 30%;
     }
     .left-p p {
-      font-size: 1.2rem;
+      font-size: 1.6vw;
       font-weight: 100;
       font-family: clashLight;
       line-height: 1.5;
@@ -796,6 +830,7 @@ nav {
       filter: drop-shadow(0 0 2rem #a7a6a56b) brightness(1.1);
       scale: 1.4;
       color: #fff;
+      /* box-shadow: 0px 0px 25px #ffffff2f; */
     }
 
     .text {
@@ -842,7 +877,7 @@ nav {
   background-color: #1d1d1d;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 
   .top {
@@ -899,7 +934,7 @@ nav {
 
   .bottom {
     width: 100%;
-    height: 60%;
+    height: 55%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -908,23 +943,22 @@ nav {
 
     .swiper {
       width: 32%;
-      height: 100%;
+      height: 90%;
       position: absolute;
-      left: 54%;
+      left: 50%;
       top: 65%;
       transform: translate(-50%, -50%);
     }
 
     .swiper-wrapper {
       position: relative;
-      width: 23vw;
+      width: 32vw;
       height: 60vh;
       z-index: 1;
       display: flex;
       transition-property: transform;
       transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
       box-sizing: content-box;
-      padding-top: 5vw;
   }
     .swiper-slide {
       display: flex;
@@ -1012,7 +1046,7 @@ nav {
       height: 4vw;
       border-radius: 50px;
       top: 50%;
-      left: -25vw;
+      left: -85%;
       background-color: #000000;
       background-image: url("Assets/imgs/rightArrowWhite.png") !important;
       background-repeat: no-repeat;
@@ -1027,7 +1061,6 @@ nav {
       background-image: url("Assets/imgs/rightArrow.png") !important;
     }
     .swiper-button-next {
-<<<<<<< HEAD
       width: 7vw;
     height: 4vw;
       border-radius: 50px;
@@ -1035,16 +1068,7 @@ nav {
       position: absolute;
       right: -77%;
       background-color: #000000;
-=======
-      width: 8vw;
-      height: 6vw;
-      border-radius: 50px;
-      top: 50%;
-      position: absolute;
-      right: -20vw;
->>>>>>> 5f303c0bf792e75e2cccf6dbdbdbbcf83fd021a4
       background-size: 4vw;
-      background-color: #000;
       background-image: url("Assets/imgs/rightArrowWhite.png") !important;
       background-repeat: no-repeat;
       background-position: center;
@@ -1059,7 +1083,7 @@ nav {
 
   .down {
     width: 100%;
-    height: 15%;
+    height: 20%;
     background-color: #000;
 
     .swiper {
@@ -1117,7 +1141,6 @@ nav {
     }
   }
 }
-
 /* section5 section5 section5 section5 section5 section5 section5 section5 section5 section5 
 section5 section5 section5 section5 section5 section5 section5 section5 section5 section5 
 section5 section5 section5 section5 section5 section5 section5 section5 section5 section5  */
@@ -1372,15 +1395,19 @@ section8 section8 section8 section8 section8 section8 section8 section8 section8
   .swiper {
     width: 100%;
     height: 100%;
+    /* background-color: lightblue; */
   }
 
   .swiper-slide {
     text-align: center;
     font-size: 18px;
+    /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 789px !important; */
     border-radius: 50px !important;
+    /* width: 60%; */
     position: relative;
   }
   .box {
@@ -1486,6 +1513,14 @@ section8 section8 section8 section8 section8 section8 section8 section8 section8
 }
 
 
+
+
+
+
+
+
+
+
 /* section9 section9 section9 section9 section9 section9 section9 section9 section9 section9 
 section9 section9 section9 section9 section9 section9 section9 section9 section9 section9 
 section9 section9 section9 section9 section9 section9 section9 section9 section9 section9  */
@@ -1501,7 +1536,6 @@ section9 section9 section9 section9 section9 section9 section9 section9 section9
   .top {
     width: 40%;
     height: 40vh;
-    padding-top: 7vh;
     i {
       font-size: 5rem;
       opacity: 0.7;
@@ -1521,6 +1555,7 @@ section9 section9 section9 section9 section9 section9 section9 section9 section9
     }
   }
   .bottom {
+    /* background-color: darkblue; */
     width: 60%;
     height: 30vh;
     display: flex;
@@ -1534,8 +1569,8 @@ section9 section9 section9 section9 section9 section9 section9 section9 section9
       gap: 1.5rem;
       width: 100%;
       height: 50%;
+      /* background-color: darkcyan; */
       flex-wrap: wrap;
-
       a {
         text-decoration: none;
         color: white;
@@ -1574,6 +1609,7 @@ section10 section10 section10 section10 section10 section10 section10 section10 
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: sandybrown; */
   h3 {
     font-size: 3rem;
     width: 60%;
@@ -1602,6 +1638,7 @@ section11 section11 section11 section11 section11 section11 section11 section11 
   width: 100%;
   margin-top: 5rem;
   height: 30vh;
+  /* padding: 0 2%; */
   .brand {
     display: flex;
     align-items: center;
@@ -1609,6 +1646,8 @@ section11 section11 section11 section11 section11 section11 section11 section11 
     gap: 2rem;
     border-bottom: 2px solid rgb(255, 255, 255);
     border-top: 2px solid rgb(255, 255, 255);
+
+    /* padding: 2rem; */
   }
   .brand img {
     height: 50px;
@@ -1626,6 +1665,7 @@ section12 section12 section12 section12 section12 section12 section12 section12 
 
 .section12 {
   width: 100%;
+  /* margin-top: 5rem; */
   height: 70vh;
   padding: 0 2%;
   display: flex;
@@ -1633,9 +1673,11 @@ section12 section12 section12 section12 section12 section12 section12 section12 
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /* background-color: saddlebrown; */
   .topp {
     width: 100%;
     height: 30vh;
+    /* background-color: rgb(255, 135, 88); */
     h1 {
       font-size: 4.6rem;
       font-family: clashMedium;
@@ -1645,17 +1687,17 @@ section12 section12 section12 section12 section12 section12 section12 section12 
   .mid {
     width: 100%;
     height: 30vh;
+    /* background-color: sandybrown; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     .l {
       width: 50%;
       height: 100%;
+      /* background-color: indianred; */
       display: flex;
       align-items: center;
       justify-content: start;
-
       .input-box {
         display: flex;
         align-items: center;
@@ -1663,9 +1705,9 @@ section12 section12 section12 section12 section12 section12 section12 section12 
         padding-left: 2vw;
         width: 500px;
         height: 70px;
+        /* padding: 0rem 0.2rem; */
         background-color: rgb(73, 73, 73);
         border-radius: 50px;
-
         .email {
           width: 80%;
           background-color: transparent;
@@ -1699,6 +1741,7 @@ section12 section12 section12 section12 section12 section12 section12 section12 
     .r {
       width: 50%;
       height: 100%;
+      /* background-color: rgb(161, 93, 93); */
       text-align: start;
       align-items: center;
       display: flex;
@@ -1713,6 +1756,7 @@ section12 section12 section12 section12 section12 section12 section12 section12 
   .bot {
     width: 100%;
     height: 10vh;
+    /* background-color: seagreen; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1722,6 +1766,7 @@ section12 section12 section12 section12 section12 section12 section12 section12 
       }
     }
     .right {
+      /* padding: 3rem; */
       a {
         text-decoration: none;
         border: 2px solid gray;
