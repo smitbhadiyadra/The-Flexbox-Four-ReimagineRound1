@@ -51,6 +51,7 @@ function firstPageAnim(){
 }
 
 
+firstPageAnim();
 
 
 
@@ -60,7 +61,6 @@ let width = window.innerWidth;
 
 if(width>550){
 
-// firstPageAnim();
     
 
 // hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
