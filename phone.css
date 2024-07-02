@@ -1,4 +1,9 @@
 @media (max-width:1200px) {
+
+  .section4 .bottom .swiper-wrapper{
+    width: 30vw;
+  }
+
   .section5 .top .l p {
     font-size: 1.5vw;
     width: 27vw;
@@ -23,6 +28,15 @@
 }
 
 @media(max-width:1100px){
+
+  .section2 .left .box .overlayArrow{
+    left: 24%;
+    i{
+      font-size: 3vw;
+        opacity: 0.8;
+    }
+  }
+
   .section9 .top p{
     font-size: 1.3rem;
   }
@@ -178,25 +192,45 @@
           }
         }
       }
-}
-.section4 .top h1 {
-  font-size: 11.3vw;
-}
-.section4 .top h2 {
-  font-size: 11.3vw;
-}
-.section4 .top span{
-  width: 60px;
-  height: 60px;
-}
-.section4 .top #span1 {
-  left: 62.5%;
-  top: 57%;
-}
-.section4 .top #span2 {
-  left: 65%;
-  top: 57%;
-}
+    }
+    
+  .section4 .top h1 {
+    font-size: 11.3vw;
+  }
+  .section4 .top h2 {
+    font-size: 11.3vw;
+  }
+  .section4 .top span{
+    width: 60px;
+    height: 60px;
+  }
+  .section4 .top #span1 {
+    left: 62.5%;
+    top: 57%;
+  }
+  .section4 .top #span2 {
+    left: 65%;
+    top: 57%;
+  }
+  .section4 .bottom{
+    
+    .swiper {
+      left: 50%;
+    }
+
+    .swiper-wrapper  {
+      width: 35vw;
+      height:61vh;
+    }
+
+    .swiper-button-prev{
+      left: -30vw;
+    }
+
+    .swiper-button-next{
+      right: -30vw;
+    }
+  }
 
 .section5 .top{
   .l p {
@@ -304,10 +338,11 @@
       font-size: 0vw;
     }
 
-    /* .section4 .bottom .swiper-wrapper  {
-      width: 30vw;
-      height:30vh;
-    } */
+    .section4 .bottom .swiper-wrapper  {
+      width: 38vw;
+      height:60vh;
+      padding-top: 10vw;
+    }
 
     .section9 .top p{
       font-size: 1.3rem;
@@ -352,7 +387,18 @@
       .section4 .top h2 {
         font-size: 11vw;
       }
-  
+      .section4 .bottom .swiper-wrapper{
+        width: 40vw;
+        height: 60vh;
+        padding-top: 10vw;
+      }
+      .section8{
+        height: 80vh;
+        .box{
+          height: 100%;
+          padding-top: 7rem;
+        }
+      }
       .section8 .swiper-button-prev{
         left: 38%;
         top: 85%;
@@ -410,7 +456,6 @@
   @media (max-width: 500px) {
     .section2{
       flex-direction: column;
-      /* background-color: saddlebrown; */
       height: 50vh;
       margin-top: 1rem;
       .left{
@@ -421,7 +466,6 @@
       .box{
         width: 50%;
         height: 50%;
-        /* background-color: darkblue; */
       }
       .circle{
         width: 30px;
@@ -458,9 +502,12 @@
           }
         }
       }
-     
-      
-      
+  }
+  .section2 .left .box .overlayArrow{
+    i{
+      font-size: 5vw;
+        opacity: 0.8;
+    }
   }
   .section3 .diamond{
     width: 100%;
@@ -472,29 +519,63 @@
     width: 100%;
     padding: 0 0 0 0;
     margin: 5vh 0 15vh 0;
+
+    .left-p p{
+      font-size: 0.8rem;
+    }
   }
 
-  .section4 .top h1 {
-    font-size: 10vw;
+  .section4 .top {
+
+    h1 {
+      font-size: 10vw;
+    }
+
+    h2 {
+      font-size: 10vw;
+    }
+
+    span{
+      width: 50px;
+      height: 50px;
+    }
+
+    #span1 {
+      left: 60.5%;
+      top: 55%;
+    }
+
+    #span2 {
+      left: 64%;
+      top: 55%;
+    }
+
   }
-  .section4 .top h2 {
-    font-size: 10vw;
-  }
-  .section4 .top span{
-    width: 50px;
-    height: 50px;
-  }
-  .section4 .top #span1 {
-    left: 60.5%;
-    top: 55%;
-  }
-  .section4 .top #span2 {
-    left: 64%;
-    top: 55%;
-  }
-  .section4 .bottom .swiper-wrapper  {
-    width: 40vw;
-    height:58vh;
+
+  .section4 .bottom{
+    .swiper {
+      width: 50vw;
+      height: 140vh;
+      top:120%;
+      left: 50vw;
+    }
+
+    .swiper-wrapper {
+      width: 100%;
+      height:50vh;
+    }
+    
+    .swiper-button-prev{
+      left: -20vw;
+      top: 20%;
+      background-size: 4vw;
+    }
+
+    .swiper-button-next{
+      right: -21vw;
+      background-size: 4vw;
+      top: 20%;
+    }
   }
 
   .section5 .top{
@@ -502,7 +583,6 @@
       display: none;  
     }
   }
-
 
 .section6{
   .swiper{
@@ -538,6 +618,19 @@
 }
   .section8{
     height: 80vh;
+    .box{
+      height: 100%;
+      padding-top: 10rem;
+
+      .up{
+        opacity: 0.9;
+        font-size: 2.5vw;
+      }
+      .upp{
+        opacity: 0.9;
+        font-size: 2.5vw;
+      }
+    }
   }
   .section8 .swiper-button-prev{
     width: 15vw;
