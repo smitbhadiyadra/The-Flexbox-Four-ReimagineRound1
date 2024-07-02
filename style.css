@@ -13,6 +13,11 @@ body {
   background: linear-gradient(45deg, #130e0c, #16100d);
 }
 
+html{
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
 ::selection{
   color: #16100d;
   background-color: #fff;
@@ -265,8 +270,9 @@ nav {
     justify-content: center;
     align-items: center;
   }
-
+  
   .logo > img {
+    cursor: pointer;
     width: 60px;
   }
 
@@ -538,7 +544,7 @@ nav {
       .halfCircle {
         width: 85px;
         height: 170px;
-        background-color: purple;
+        /* background-color: #926a54; */
         border-radius: 0 150px 150px 0;
         background-image: url(Assets/imgs/ringHalf.png);
         background-repeat: no-repeat;
@@ -648,6 +654,8 @@ nav {
     }
   }
 }
+
+
 
 /* Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3
    Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3 Section3
@@ -835,23 +843,23 @@ nav {
   }
 
   .circleLeft {
-    height: .8vw;
-    width: .8vw;
+    height: .75vw;
+    width: .75vw;
     background-color: #fff;
     /* border-radius: 50%; */
     transform: rotate(45deg) translate(-50%, -50%);
     position: absolute;
-    top: 0.35vw;
+    top: 0.2vw;
     left: 10%;
   }
   .circleRight {
-    height: .8vw;
-    width: .8vw;
+    height: .75vw;
+    width: .75vw;
     background-color: #fff;
     /* border-radius: 50%; */
     transform: rotate(45deg) translate(-50%, -50%);
     position: absolute;
-    top: 0.35vw;
+    top: 0.2vw;
     right: 10%;
   }
 }
@@ -1034,8 +1042,8 @@ nav {
     }
 
     .swiper-button-prev {
-      width: 8vw;
-      height: 6vw;
+      width: 7vw;
+      height: 4vw;
       border-radius: 50px;
       top: 50%;
       left: -85%;
@@ -1053,12 +1061,13 @@ nav {
       background-image: url("Assets/imgs/rightArrow.png") !important;
     }
     .swiper-button-next {
-      width: 8vw;
-    height: 6vw;
+      width: 7vw;
+    height: 4vw;
       border-radius: 50px;
       top: 50%;
       position: absolute;
       right: -77%;
+      background-color: #000000;
       background-size: 4vw;
       background-image: url("Assets/imgs/rightArrowWhite.png") !important;
       background-repeat: no-repeat;
@@ -1140,6 +1149,7 @@ section5 section5 section5 section5 section5 section5 section5 section5 section5
   width: 100%;
   height: 15vw;
   padding: 0 2%;
+  margin-top: 10vh;
 
   .top {
     width: 100%;
@@ -1166,19 +1176,22 @@ section6 section6 section6 section6 section6 section6 section6 section6 section6
   width: 100%;
   height: 100%;
   padding-bottom: 1.3vw;
+  padding-top: 5vh;
+  border-bottom: 1px solid #fff;
 
   .swiper {
     width: 100%;
     padding-top: 2.6vw;
     height: 47vw;
+    /* background-color: red; */
   }
 
   .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 17rem;
-    height: 30rem;
-    border-radius: 10px;
+    height: 27rem;
+    border-radius: 30px;
     background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     position: relative;
@@ -1260,18 +1273,23 @@ section6 section6 section6 section6 section6 section6 section6 section6 section6
       scale(1) !important;
     z-index: 1;
     opacity: 1;
+    height: 26rem;
   }
 
   .swiper-slide-next {
     transition-duration: 100ms;
     transform: translate3d(20px, -15px, 10px) rotateX(0deg) rotateY(-30deg) scale(0.9) !important;
     z-index: -1;
+    height: 30rem;
+    margin-right: 10px;
   }
   .swiper-slide-prev {
-    transition-duration: 0ms;
+    transition-duration: 100ms;
     transform: translate3d(-20px, -15px, 10px) rotateX(0deg) rotateY(30deg)
       scale(0.9) !important;
     z-index: -1;
+    height: 30rem;
+    margin-left: 10px;
   }
   .swiper-slide .swiper-slide-visible .swiper-slide-fully-visible {
     transition-duration: 0ms;
@@ -1281,13 +1299,14 @@ section6 section6 section6 section6 section6 section6 section6 section6 section6
   }
   .swiper-button-next {
     position: absolute;
-    left: 50%;
-    top: 95%;
+    left: 51%;
+    top: 85%;
     background-color: #000000;
     background-image: url("Assets/imgs/rightArrowWhite.png") !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px;
+    border: 1px solid #000;
     transition: background-color 0.5s, background-image 0.5s;
     width: 80px;
     height: 50px;
@@ -1301,8 +1320,8 @@ section6 section6 section6 section6 section6 section6 section6 section6 section6
   .swiper-button-prev {
     position: absolute;
     left: 45%;
-    top: 95%;
-    width: 50px;
+    top: 85%;
+    width: 80px;
     height: 50px;
     border-radius: 50px;
     background-color: #c4c4c400;
@@ -1345,6 +1364,8 @@ section7 section7 section7 section7 section7 section7 section7 section7 section7
     p {
       font-size: 1.7vw;
       font-family: clashMedium;
+      opacity: .7;
+      letter-spacing: 1px;
     }
   }
   .bot {
@@ -1557,12 +1578,15 @@ section9 section9 section9 section9 section9 section9 section9 section9 section9
         padding: 1rem 1.5rem;
         border-radius: 30px;
         font-size: 1rem;
+        font-weight: 500;
         font-family: clashLight;
         transition: all ease 1s;
+        letter-spacing: 1px;
       }
       .ourd {
         background-color: white;
         color: black;
+        font-weight: 600;
         border: 2px solid black;
       }
       a:hover {
