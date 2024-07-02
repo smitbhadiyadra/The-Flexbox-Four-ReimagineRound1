@@ -1,5 +1,7 @@
 @media (max-width:1200px) {
-
+  .section3{
+    height: 80vh;
+  }
   .section4 .bottom .swiper-wrapper{
     width: 30vw;
   }
@@ -36,7 +38,9 @@
         opacity: 0.8;
     }
   }
-
+.section3{
+    height: 70vh;
+  }
   .section9 .top p{
     font-size: 1.3rem;
   }
@@ -107,9 +111,33 @@
         .search,.shop,.login{
           width: 15vw;
           height: 5vh;
-          font-size: 8vw;
+          /* font-size: 8vw; */
           padding: 0;
         }
+       .buttons > .shop{
+          font-size: 3vw;
+        }
+        .buttons > .login{
+          font-size: 3vw;
+        }
+         .buttons > .search {
+          width: 7vw;
+          height: 7vw;
+          padding: 1vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50px;
+          background-color: transparent;
+          outline: none;
+          border: 1.5px solid #ffffff;
+          cursor: pointer;
+          /* background-color: darkblue; */
+          transition: background-color 0.5s;
+        }
+       .buttons > .search > i{
+              font-size: 4vw;
+            }
     }
     .hero{
         width: 100%;
@@ -148,6 +176,22 @@
               object-position: center;
               object-fit: cover;
             }
+          }
+      .main-content{
+            h3>i{
+              /* font-size: rem; */
+              font-size: 3vw;
+            }
+            h1{
+              font-size: 6vw;
+            }
+            .buttons > .order,
+  .buttons > .collection {
+    padding: 1.5vw 5vw;
+   
+    font-size: 3vw;
+   
+  }
           }
     }
     .swiper-slide video {
@@ -193,7 +237,9 @@
         }
       }
     }
-    
+    .section3{
+      height: 60vh;
+    }
   .section4 .top h1 {
     font-size: 11.3vw;
   }
@@ -337,7 +383,9 @@
     .up .top > h1{
       font-size: 0vw;
     }
-
+ .section3{
+      height: 60vh;
+    }
     .section4 .bottom .swiper-wrapper  {
       width: 38vw;
       height:60vh;
@@ -368,7 +416,9 @@
 }
 
 @media (max-width: 645px){
-  
+  .section3{
+    height: 60vh;
+  }
       .section3 .diamond{
         width: 100%;
         margin: 0 0 30vw 0;
@@ -508,6 +558,9 @@
       font-size: 5vw;
         opacity: 0.8;
     }
+  }
+    .section3{
+    height: 50vh;
   }
   .section3 .diamond{
     width: 100%;
