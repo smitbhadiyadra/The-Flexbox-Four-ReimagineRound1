@@ -179,6 +179,24 @@
         }
       }
 }
+.section4 .top h1 {
+  font-size: 11.3vw;
+}
+.section4 .top h2 {
+  font-size: 11.3vw;
+}
+.section4 .top span{
+  width: 60px;
+  height: 60px;
+}
+.section4 .top #span1 {
+  left: 62.5%;
+  top: 57%;
+}
+.section4 .top #span2 {
+  left: 65%;
+  top: 57%;
+}
 
 .section5 .top{
   .l p {
@@ -219,8 +237,11 @@
   height: 8vh;
   background-size: 5vw;
 }
-.section8 .box .upp{
-  display: none;
+.section8 .swiper-slide {
+  font-size: 15px;
+}
+.section8 .box h1{
+  font-size: 2.1rem;
 }
 
 .section9 .bottom .links{
@@ -309,9 +330,9 @@
       font-size: 4rem;
       font-weight: 50;
     }
-  }
+}
 
-  @media (max-width: 645px){
+@media (max-width: 645px){
   
       .section3 .diamond{
         width: 100%;
@@ -331,19 +352,6 @@
       .section4 .top h2 {
         font-size: 11vw;
       }
-
-      .section4 .top span{
-        width: 60px;
-        height: 60px;
-      }
-      .section4 .top #span1 {
-        left: 62.5%;
-        top: 57%;
-      }
-      .section4 .top #span2 {
-        left: 65%;
-        top: 57%;
-      }
   
       .section8 .swiper-button-prev{
         left: 38%;
@@ -352,7 +360,27 @@
         height: 8vh;
         background-size: 5vw;
       }
-      
+      .section8 .swiper-slide {
+        font-size: 11px;
+      }
+      .section8 .box h1{
+        font-size: 1.8rem;
+      }
+      .section9 .top p{
+        font-size: 1.1rem;
+      }
+      .section10 {
+        h3 {
+            font-size: 1.7rem;
+        }
+        .s10img {
+          height: 9vw;
+        }
+        .ri-vip-diamond-fill {
+          color: orangered;
+          font-size: 2.5rem;
+        }
+    } 
       .section11 .brand img:nth-of-type(2){
         display: none;
       }
@@ -376,7 +404,7 @@
       .section12 .topp h1{
         font-size: 2rem;
       }
-  }
+}
   
 
   @media (max-width: 500px) {
@@ -411,7 +439,7 @@
         }
       }
         .overlayArrow{
-       display: none;
+          display: none;
       }
       .right{
         width: 100%;
@@ -508,7 +536,9 @@
     font-size: 11vw;
   }
 }
-
+  .section8{
+    height: 80vh;
+  }
   .section8 .swiper-button-prev{
     width: 15vw;
     height: 8vh;
@@ -525,9 +555,15 @@
   .section8 .box h4 {
     display: none;
   }
-
+  .section8 .swiper-slide {
+    font-size: 9px;
+  }
+  .section8 .box h1{
+    font-size: 1.4rem;
+  }
+  
   .section9 .top p{
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
   .section9 .top i{
     font-size: 2rem;
@@ -544,22 +580,22 @@
   }
   .section10{
     height: 40vh;
-    margin-top: 1rem;
-    h3{
-      font-size: 1.5rem;
-    }
-    .s10img{
+    padding-top: 8vh;
+  }
+  .section10 .s10img{
       height: 8vw;
     }
-    .ri-vip-diamond-fill {
+  .section10 h3{
+      font-size: 1.5rem;
+    }
+  .section10 .ri-vip-diamond-fill {
       color: orangered;
       font-size: 2.5rem;
     }
-    .ri-service-line {
+  .section10 .ri-service-line {
       color: red;
       font-size: 2.5rem;
     }
-  }
   .section11 .brand img {
     height: 30px;
   }
