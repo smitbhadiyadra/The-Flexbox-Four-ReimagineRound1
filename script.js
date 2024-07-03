@@ -128,22 +128,24 @@ function section2Animation(){
             ease: "elastic.out(1, .8)",
             y: 100
         })
+
+        gsap.from(".section2>.right, .section2>.right>i,  .section2>.right>h1>  .section2>.right .box",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section2",
+                start: "top 70%",
+                end: "bottom bottom",
+                // markers: true
+            },
+            opacity: 0,
+            duration: 1.5,
+            stagger: .1,
+            ease: "elastic.out(1, .8)",
+            y: 100
+        })
     }
 
-    gsap.from(".section2>.right, .section2>.right>i,  .section2>.right>h1>  .section2>.right .box",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section2",
-            start: "top 70%",
-            end: "bottom bottom",
-            // markers: true
-        },
-        opacity: 0,
-        duration: 1.5,
-        stagger: .1,
-        ease: "elastic.out(1, .8)",
-        y: 100
-    })
+  
 
     
     gsap.to(".section2>.left",{
@@ -182,6 +184,7 @@ section2Animation();
 
 function section3Animation(){
     
+   if(width>550){
     gsap.from(".section3>.up>.top>h1, .section3>.up>.top>.top-right>.img, .section3>.up>.top>.top-right>button, .section3>.up>.bottom>.left-p>p, .section3>.up>.bottom>.right-h1>h1",{
         scrollTrigger:{
             scroller: ".main",
@@ -196,6 +199,8 @@ function section3Animation(){
         ease: "elastic.out(1, .8)",
         x: 200
     })
+
+   }
 
     gsap.to(".section3 .up>.top",{
         scrollTrigger: {
@@ -225,79 +230,81 @@ function section3Animation(){
         duration: 2,
     })
 
-    gsap.from(".section3>.diamond>hr",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section3>.diamond",
-            start: "top 70%",
-            end: "bottom bottom",
-            // markers: true
-        },
-        opacity: 0,
-        width: "100%",
-        duration: 1,
-        delay: 1,
-        stagger: .1,
-        ease: "elastic.out(1, .8)",
-    })
-
-    gsap.from(" .section3>.diamond>.circleLeft, .section3>.diamond>.circleRight",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section3>.diamond",
-            start: "top 70%",
-            end: "bottom bottom",
-            // markers: true
-        },
-        opacity: 0,
-        scale: 1.2,
-        left: "50%",
-        duration: 1,
-        delay: 1,
-        stagger: .1,
-        ease: "elastic.out(.3, .9)",
-    })
+    if(width>550){
+        gsap.from(".section3>.diamond>hr",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section3>.diamond",
+                start: "top 70%",
+                end: "bottom bottom",
+                // markers: true
+            },
+            opacity: 0,
+            width: "100%",
+            duration: 1,
+            delay: 1,
+            stagger: .1,
+            ease: "elastic.out(1, .8)",
+        })
     
-    gsap.from(".section3>.diamond>.diamond-img img",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section3>.diamond",
-            start: "top 70%",
-            end: "bottom bottom",
-            autoAlpha: 1
-            // markers: true
-        },
-        y: 100,
-        opacity: 0,
-        duration: 2,
-        stagger: {
-            from: "center",
-            amount: 0.5
-        },
-        scale: .5,
-        ease: "elastic.out(1, .7)",
-    })
-
-    gsap.from(".section3>.diamond>.diamond-img>.img>h2",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section3>.diamond",
-            start: "top 70%",
-            end: "bottom bottom",
-            autoAlpha: 1
-            // markers: true
-        },
-        opacity: 0,
-        duration: 2,
-        stagger: {
-            from: "center",
-            amount: 0.5
-        },
-        scale: .95,
-        y: 150, 
-        ease: "elastic.out(1, .7)",
-    })
-
+        gsap.from(" .section3>.diamond>.circleLeft, .section3>.diamond>.circleRight",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section3>.diamond",
+                start: "top 70%",
+                end: "bottom bottom",
+                // markers: true
+            },
+            opacity: 0,
+            scale: 1.2,
+            left: "50%",
+            duration: 1,
+            delay: 1,
+            stagger: .1,
+            ease: "elastic.out(.3, .9)",
+        })
+        
+        gsap.from(".section3>.diamond>.diamond-img img",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section3>.diamond",
+                start: "top 70%",
+                end: "bottom bottom",
+                autoAlpha: 1
+                // markers: true
+            },
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            stagger: {
+                from: "center",
+                amount: 0.5
+            },
+            scale: .5,
+            ease: "elastic.out(1, .7)",
+        })
+    
+        gsap.from(".section3>.diamond>.diamond-img>.img>h2",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section3>.diamond",
+                start: "top 70%",
+                end: "bottom bottom",
+                autoAlpha: 1
+                // markers: true
+            },
+            opacity: 0,
+            duration: 2,
+            stagger: {
+                from: "center",
+                amount: 0.5
+            },
+            scale: .95,
+            y: 150, 
+            ease: "elastic.out(1, .7)",
+        })
+    
+    }
 }
 
 section3Animation();
@@ -513,34 +520,37 @@ function section4Animation(){
         // x: -100
     })
     
-    gsap.to(".section4>.top",{
-        scrollTrigger: {
-            scroller: ".main",
-            trigger: ".section4>.top",
-            start: "top 0%",
-            end: "+=25%",
-            pin: true,
-            // markers: true,
-            scrub: 2
-        },
-        scale: .8,
-        duration: 2,
-    })
-    
-    
-    gsap.from(".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",
-            start: "top 70%",
-            end: "bottom bottom",
-            // markers: true
-        },
-        opacity: 0,
-        duration: 2,
-        stagger: .1,
-        ease: "elastic.out(1, .8)",
-    })
+    if(width>550){
+
+        gsap.to(".section4>.top",{
+            scrollTrigger: {
+                scroller: ".main",
+                trigger: ".section4>.top",
+                start: "top 0%",
+                end: "+=25%",
+                pin: true,
+                // markers: true,
+                scrub: 2
+            },
+            scale: .8,
+            duration: 2,
+        })
+        
+        
+        gsap.from(".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",
+                start: "top 70%",
+                end: "bottom bottom",
+                // markers: true
+            },
+            opacity: 0,
+            duration: 2,
+            stagger: .1,
+            ease: "elastic.out(1, .8)",
+        })
+    }
 }
 
 section4Animation();
@@ -926,23 +936,25 @@ function section12Animation(){
         ease: "elastic.out(1, .4)",
     })
 
-    gsap.from(".section12>.mid>.l>.input-box",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section12>.mid>.l",
-            start: "top 65%",
-            end: "bottom 98%",
-            // markers: true
-        },
-        width: "10px",
-        duration: 2,
-        // stagger: .1,
-        opacity: 0,
-        delay: .2,
-        ease: "elastic.out(1, .6)",
-    })
+    
 
     if(width>550){
+
+        gsap.from(".section12>.mid>.l>.input-box",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section12>.mid>.l",
+                start: "top 65%",
+                end: "bottom 98%",
+                // markers: true
+            },
+            width: "10px",
+            duration: 2,
+            // stagger: .1,
+            opacity: 0,
+            delay: .2,
+            ease: "elastic.out(1, .6)",
+        })
 
         gsap.from(".section12>.mid>.r>p",{
             scrollTrigger:{
@@ -1009,6 +1021,39 @@ if(width<550){
             y: 100
         })
 
+        gsap.from(".section2>.right, .section2>.right>i,  .section2>.right>h1>  .section2>.right .box",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section2",
+                start: "top 70%",
+                end: "bottom bottom",
+                // markers: true
+            },
+            opacity: 0,
+            duration: 1.5,
+            delay: .5,
+            stagger: .1,
+            ease: "elastic.out(1, .8)",
+            y: 100
+        })
+
+        gsap.from(".section3>.up>.top>h1, .section3>.up>.top>.top-right>.img, .section3>.up>.top>.top-right>button, .section3>.up>.bottom>.left-p>p, .section3>.up>.bottom>.right-h1>h1",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section3",
+                start: "top 70%",
+                end: "bottom bottom",
+                // markers: true
+            },
+            opacity: 0,
+            duration: 1.5,
+            delay: .5,
+            stagger: .1,
+            ease: "elastic.out(1, .8)",
+            x: 200
+        })
+    
+
 
         gsap.from(".section5 .top .l",{
             x:-550,
@@ -1035,16 +1080,76 @@ if(width<550){
             },
           })
 
-          gsap.from(".section3>.diamond>.diamond-img>.img>img",{
-            scale: .5,
-            opacity: 0,
-            stagger: {
-                amount: 0.5
+          gsap.from(".section3>.diamond>.diamond-img img",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section3>.diamond",
+                start: "top 85%",
+                end: "bottom bottom",
+                autoAlpha: 1
+                // markers: true
             },
-            duration: 1.5,
-            ease: "elastic.out(1, .7)",
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            stagger: {
+                amount: 0.4
+            },
+            scale: .9,
+            delay: .4,
+            ease: "elastic.out(1, .85)",
         })
+    
+        gsap.from(".section3>.diamond>.diamond-img>.img>h2",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section3>.diamond",
+                start: "top 85%",
+                end: "bottom bottom",
+                autoAlpha: 1
+                // markers: true
+            },
+            opacity: 0,
+            duration: 2,
+            stagger: {
+                amount: 0.4
+            },
+            scale: .95,
+            y: 100, 
+            delay: .4,
+            ease: "elastic.out(1, .85)",
+        })
+    
 
+        gsap.to(".section4>.top",{
+            scrollTrigger: {
+                scroller: ".main",
+                trigger: ".section4>.top",
+                start: "top 20%",
+                end: "+=25%",
+                pin: true,
+                // markers: true,
+                scrub: 2
+            },
+            scale: .9,
+            duration: 2,
+        })
+        
+        
+        gsap.from(".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",
+                start: "top 70%",
+                end: "bottom bottom",
+                // markers: true
+            },
+            opacity: 0,
+            duration: 2,
+            delay: .5,
+            stagger: .05,
+            ease: "elastic.out(1, .8)",
+        })
 
 
     
@@ -1095,9 +1200,11 @@ var swiper = new Swiper(".section4>.down>.mySwiper", {
 //   section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION 
 
 
-gsap.from(".section6  ",{
+gsap.from(".section6",{
     opacity: 0,
-    duration: 1.5,  
+    duration: 1.5,
+    delay: .5,  
+    y: 20,
 
     scrollTrigger:{
         scroller: ".main",
@@ -1105,6 +1212,7 @@ gsap.from(".section6  ",{
         start: "top 80%",
         end: "bottom bottom",
         // markers: true,
+        scrub: .5,
     },
   })
 
@@ -1138,13 +1246,29 @@ var swiper = new Swiper(".section6>.mySwiperr", {
   });
 
 
+  gsap.from(".section12>.mid>.l>.input-box",{
+    scrollTrigger:{
+        scroller: ".main",
+        trigger: ".section12>.mid>.l",
+        start: "top 95%",
+        end: "bottom 98%",
+        // markers: true
+    },
+    width: "10px",
+    duration: 2,
+    // stagger: .1,
+    opacity: 0,
+    delay: .2,
+    ease: "elastic.out(1, .6)",
+})
+
   
   gsap.from(".section12>.mid>.r>p",{
     scrollTrigger:{
         scroller: ".main",
         trigger: ".section12>.mid>.r",
-        start: "top 85%",
-        end: "bottom 98%",
+        start: "top 94%",
+        end: "bottom bottom",
         // markers: true
     },
     x: 150,
@@ -1159,7 +1283,7 @@ gsap.from(".section12>.bot>.left>p, .section12>.bot>.right ",{
     scrollTrigger:{
         scroller: ".main",
         trigger: ".section12>.bot>.left",
-        start: "top 110%",
+        start: "top 150%",
         end: "bottom bottom",
         // markers: true
     },
