@@ -1,8 +1,7 @@
-
-// FOr Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
-// FOr Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
-// FOr Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
-// FOr Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
+// For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
+// For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
+// For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
+// For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js For Locomotive js 
 
 function locomotiveScroll(){
 
@@ -33,17 +32,15 @@ function locomotiveScroll(){
 locomotiveScroll();
 
 
-
-
 function firstPageAnim(){
-    var tl3 = gsap.timeline();
+    var tl = gsap.timeline();
 
 
-    tl3.from(".text-wrapper", {
+    tl.from(".text-wrapper", {
         duration: 3,
         // scale: 0
-    });
-    tl3.to("#preloader", {
+    })
+    .to("#preloader", {
         duration: 1,
         y: "-100%",
         delay: 1.5,
@@ -59,7 +56,8 @@ let width = window.innerWidth;
 
 
 
-if(width>550){
+
+
 
     
 
@@ -68,9 +66,9 @@ if(width>550){
 // hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page  hero page 
 
 function heroPageAnimation(){
-    let tl = gsap.timeline();
+    let tl1 = gsap.timeline();
 
-    tl.from("nav,nav>.logo>img, nav>.logo>a",{
+    tl1.from("nav,nav>.logo>img, nav>.logo>a",{
         opacity: 0,
         duration: 2.5,
         stagger: .06,
@@ -114,7 +112,25 @@ heroPageAnimation();
 
 
 function section2Animation(){
-    gsap.from(".section2>.left, .section2>.right, .section2>.left>.box>.circle, .section2>.left>.box>.halfCircle, .section2>.left>.box>.overlayArrow, .section2>.left>i, .section2>.left>h1,  .section2>.right>i,  .section2>.right>h1>  .section2>.right .box",{
+   
+    if(width>550){
+        gsap.from(".section2>.left, .section2>.left>.box>.circle, .section2>.left>.box>.halfCircle, .section2>.left>.box>.overlayArrow, .section2>.left>i, .section2>.left>h1",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section2",
+                start: "top 70%",
+                end: "bottom bottom",
+                // markers: true
+            },
+            opacity: 0,
+            duration: 1.5,
+            stagger: .1,
+            ease: "elastic.out(1, .8)",
+            y: 100
+        })
+    }
+
+    gsap.from(".section2>.right, .section2>.right>i,  .section2>.right>h1>  .section2>.right .box",{
         scrollTrigger:{
             scroller: ".main",
             trigger: ".section2",
@@ -128,6 +144,7 @@ function section2Animation(){
         ease: "elastic.out(1, .8)",
         y: 100
     })
+
     
     gsap.to(".section2>.left",{
         scrollTrigger: {
@@ -285,59 +302,6 @@ function section3Animation(){
 
 section3Animation();
 
-// section4 Animation section4 Animation section4 Animation section4 Animation  Animation section4 Animation
-// section4 Animation section4 Animation section4 Animation section4 Animation  Animation section4 Animation
-// section4 Animation section4 Animation section4 Animation section4 Animation  Animation section4 Animation
-
-
-function section4Animation(){   
-    gsap.from(".section4>.top>h1, .section4>.top>h2, .section4>.top>span",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section4>.top>h1",
-            start: "top 70%",
-            end: "bottom bottom",
-            // markers: true
-        },
-        opacity: 0,
-        duration: 1.5,
-        stagger: .1,
-        scale: .8,
-        ease: "elastic.out(1, .8)",
-        // x: -100
-    })
-    
-    gsap.to(".section4>.top",{
-        scrollTrigger: {
-            scroller: ".main",
-            trigger: ".section4>.top",
-            start: "top 0%",
-            end: "+=25%",
-            pin: true,
-            // markers: true,
-            scrub: 2
-        },
-        scale: .8,
-        duration: 2,
-    })
-    
-    
-    gsap.from(".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",
-            start: "top 70%",
-            end: "bottom bottom",
-            // markers: true
-        },
-        opacity: 0,
-        duration: 2,
-        stagger: .1,
-        ease: "elastic.out(1, .8)",
-    })
-}
-
-section4Animation();
 
 
 
@@ -361,6 +325,8 @@ var swiper = new Swiper(".hero>.container>.mySwiper", {
 // dimond animation dimond animation dimond animation dimond adimond animation nimation dimond animation 
 // dimond animation dimond animation dimond animation dimond adimond animation nimation dimond animation 
 
+if(width>550){
+    
 let diamondContainer = document.querySelector('.diamond-img');
 
 diamondContainer.addEventListener('click', function(e) {
@@ -520,9 +486,64 @@ diamondContainer.addEventListener('click', function(e) {
 
 })
 
+}
+
 // section 4 category view animation section 4 category view animation section 4 category view animation section 4 category view animation 
 // section 4 category view animation section 4 category view animation section 4 category view animation section 4 category view animation 
 // section 4 category view animation section 4 category view animation section 4 category view animation section 4 category view animation 
+// section4 Animation section4 Animation section4 Animation section4 Animation  Animation section4 Animation
+// section4 Animation section4 Animation section4 Animation section4 Animation  Animation section4 Animation
+// section4 Animation section4 Animation section4 Animation section4 Animation  Animation section4 Animation
+
+
+function section4Animation(){   
+    gsap.from(".section4>.top>h1, .section4>.top>h2, .section4>.top>span",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section4>.top>h1",
+            start: "top 70%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        opacity: 0,
+        duration: 1.5,
+        stagger: .1,
+        scale: .8,
+        ease: "elastic.out(1, .8)",
+        // x: -100
+    })
+    
+    gsap.to(".section4>.top",{
+        scrollTrigger: {
+            scroller: ".main",
+            trigger: ".section4>.top",
+            start: "top 0%",
+            end: "+=25%",
+            pin: true,
+            // markers: true,
+            scrub: 2
+        },
+        scale: .8,
+        duration: 2,
+    })
+    
+    
+    gsap.from(".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",{
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",
+            start: "top 70%",
+            end: "bottom bottom",
+            // markers: true
+        },
+        opacity: 0,
+        duration: 2,
+        stagger: .1,
+        ease: "elastic.out(1, .8)",
+    })
+}
+
+section4Animation();
 
 var swiper = new Swiper(".section4>.bottom>.mySwiper", {
     effect: "cards",
@@ -534,8 +555,8 @@ var swiper = new Swiper(".section4>.bottom>.mySwiper", {
     },
     speed: 1200, 
     cardsEffect: {
-      perSlideOffset: 12,
-      perSlideRotate: 6, 
+      perSlideOffset: 10,
+      perSlideRotate: 5, 
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -565,105 +586,88 @@ var swiper = new Swiper(".section4>.down>.mySwiper", {
 // section5 animation section5 animation section5 animation section5 animation 
 // section5 animation section5 animation section5 animation section5 animation 
 
-gsap.from(".section5 .top .l",{
-    x:-550,
-
-
-    scrollTrigger:{
-        scroller: ".main",
-        trigger: ".section5 .top .l",
-        start: "top 70%",
-        // end: "bottom 20%",
-        // markers: true,
-        scrub: 2
-    },
-  })
-  gsap.from(".section5 .top .r",{
-    x:1550,
-
-
-    scrollTrigger:{
-        scroller: ".main",
-        trigger: ".section5 .top .r",
-        // start: "top 70%",
-        // end: "bottom bottom",
-        // markers: true
-        scrub: 2
-    },
-  })
+if(width>550){
+    gsap.from(".section5 .top .l",{
+        x:-550,
+        y: -100,
+    
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section5 .top .l",
+            start: "top 70%",
+            // end: "bottom 20%",
+            // markers: true,
+            scrub: 2
+        },
+      })
+      gsap.from(".section5 .top .r",{
+        x:1550,
+        y: -100,
+    
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section5 .top .r",
+            // start: "top 70%",
+            // end: "bottom bottom",
+            // markers: true
+            scrub: 2
+        },
+      })
+}
 
 //   section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION 
 //   section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION 
 //   section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION section6 ANIMATION 
 
 
-  gsap.from(".section6  ",{
-    // y:500,
-    opacity: 0,
-    scale: 1.5  ,
-    stagger: 0.5,
-  
+ if(width>550){
+    gsap.from(".section6  ",{
+        // y:500,
+        opacity: 0,
+        scale: 1.5  ,
+        stagger: 0.5,
+      
+    
+        scrollTrigger:{
+            scroller: ".main",
+            trigger: ".section6 ",
+            start: "top 50%",
+            end: "50% bottom",
+            // markers: true,
+            scrub: 1
+        },
+      })
 
-    scrollTrigger:{
-        scroller: ".main",
-        trigger: ".section6 ",
-        start: "top 70%",
-        end: "bottom bottom",
-        // markers: true,
-        scrub: 2
-    },
-  })
-
-
-var swiper = new Swiper(".section6>.mySwiperr", {
-    effect: "coverflow",
-    grabCursor: false,
-    allowTouchMove: false,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 'auto',
-
-    coverflowEffect: {
-      rotate: 15,
-    //   rotateY: 200,
-      stretch: -10,
-      depth: 0,
-      modifier: 1,
-      slideShadows: true,
-    },
-   speed: 600,
-    pagination: {
-    //   el: ".swiper-pagination",
-      clickable: true
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-   
-  });
-
-
-
-
-  //    new collection section 8
-var swiper = new Swiper(".nc>.mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-    //   el: ".swiper-pagination",
-    // type: "progressbar",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-
-
+      var swiper = new Swiper(".section6>.mySwiperr", {
+        effect: "coverflow",
+        grabCursor: false,
+        allowTouchMove: false,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 'auto',
+    
+        coverflowEffect: {
+          rotate: 15,
+        //   rotateY: 200,
+          stretch: -10,
+          depth: 0,
+          modifier: 1,
+          slideShadows: true,
+        },
+       speed: 600,
+        pagination: {
+        //   el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+       
+      });
+    
+    
+ }
 
 
 
@@ -753,6 +757,25 @@ function section8Animation(){
 }
 
 section8Animation();
+
+
+
+  //    new collection section 8
+  var swiper = new Swiper(".nc>.mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+    //   el: ".swiper-pagination",
+    // type: "progressbar",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 
 
 
@@ -919,48 +942,56 @@ function section12Animation(){
         ease: "elastic.out(1, .6)",
     })
 
-    gsap.from(".section12>.mid>.r>p",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section12>.mid>.r",
-            start: "top 65%",
-            end: "bottom 98%",
-            // markers: true
-        },
-        x: 150,
-        duration: 2,
-        // stagger: .1,
-        opacity: 0,
-        delay: .2,
-        ease: "elastic.out(1, .6)",
-    })
+    if(width>550){
 
-    gsap.from(".section12>.bot>.left>p, .section12>.bot>.right ",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section12>.bot>.left",
-            start: "top 95%",
-            end: "bottom 98%",
-            // markers: true
-        },
-        x: 150,
-        duration: 2,
-        stagger: .2,
-        opacity: 0,
-        delay: .2,
-        ease: "elastic.out(1, .6)",
-    })
+        gsap.from(".section12>.mid>.r>p",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section12>.mid>.r",
+                start: "top 65%",
+                end: "bottom 98%",
+                // markers: true
+            },
+            x: 150,
+            duration: 2,
+            // stagger: .1,
+            opacity: 0,
+            delay: .2,
+            ease: "elastic.out(1, .6)",
+        })
+    
+        gsap.from(".section12>.bot>.left>p, .section12>.bot>.right ",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section12>.bot>.left",
+                start: "top 95%",
+                end: "bottom 98%",
+                // markers: true
+            },
+            x: 150,
+            duration: 2,
+            stagger: .2,
+            opacity: 0,
+            delay: .2,
+            ease: "elastic.out(1, .6)",
+        })
+
+    }
 
 }
 
 section12Animation();
 
 
-}
 
 
 
-
+// Mobile Animation Mobile Animation Mobile Animation Mobile Animation  Animation Mobile Animation
+// Mobile Animation Mobile Animation Mobile Animation Mobile Animation  Animation Mobile Animation
+// Mobile Animation Mobile Animation Mobile Animation Mobile Animation  Animation Mobile Animation
+// Mobile Animation Mobile Animation Mobile Animation Mobile Animation  Animation Mobile Animation
+// Mobile Animation Mobile Animation Mobile Animation Mobile Animation  Animation Mobile Animation
+// Mobile Animation Mobile Animation Mobile Animation Mobile Animation  Animation Mobile Animation
 
 
 
@@ -969,82 +1000,50 @@ section12Animation();
 
 if(width<550){
 
-
-    
-// section2 Animation section2 Animation section2 Animation section2 Animation  Animation section2 Animation
-// section2 Animation section2 Animation section2 Animation section2 Animation  Animation section2 Animation
-// section2 Animation section2 Animation section2 Animation section2 Animation  Animation section2 Animation
-
-
-    function section2Animation(){
         gsap.from(".section2>.left, .section2>.left>.box>.circle, .section2>.left>.box>.halfCircle, .section2>.left>.box>.overlayArrow, .section2>.left>i, .section2>.left>h1",{
-            // scrollTrigger:{
-            //     scroller: ".main",
-            //     trigger: ".section2",
-            //     start: "top 70%",
-            //     end: "bottom bottom",
-            //     // markers: true
-            // },
             opacity: 0,
             duration: 1.5,
+            delay: 6.8,
             stagger: .1,
             ease: "elastic.out(1, .8)",
             y: 100
         })
 
-        gsap.from(".section2>.right, .section2>.right>i,  .section2>.right>h1>  .section2>.right .box",{
+
+        gsap.from(".section5 .top .l",{
+            x:-550,
+            y: -100,
+        
             scrollTrigger:{
                 scroller: ".main",
-                trigger: ".section2",
+                trigger: ".section5 .top .l",
                 start: "top 70%",
-                end: "bottom bottom",
+                // end: "bottom 20%",
+                // markers: true,
+            },
+          })
+          gsap.from(".section5 .top .r",{
+            x:1550,
+            y: -100,
+        
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section5 .top .r",
+                // start: "top 70%",
+                // end: "bottom bottom",
                 // markers: true
             },
+          })
+
+          gsap.from(".section3>.diamond>.diamond-img>.img>img",{
+            scale: .5,
             opacity: 0,
-            duration: 2,
-            stagger: .1,
-            ease: "elastic.out(1, .8)",
-            y: 100
-        })
-        
-        gsap.to(".section2>.left",{
-            scrollTrigger: {
-                scroller: ".main",
-                trigger: ".section2",
-                start: "top top",
-                end: "bottom 1%",
-                // markers: true,
-                scrub: 2
+            stagger: {
+                amount: 0.5
             },
-            x: -1200,
-            duration: 5,
+            duration: 1.5,
+            ease: "elastic.out(1, .7)",
         })
-        gsap.to(".section2>.right",{
-            scrollTrigger: {
-                scroller: ".main",
-                trigger: ".section2",
-                start: "top top",
-                end: "bottom 1%",
-                // markers: true,
-                scrub: 2
-            },
-            x: 800,
-            duration: 5,
-        })
-    }
-    
-    section2Animation();
-
-
-
-
-    
-// section5 animation section5 animation section5 animation section5 animation 
-// section5 animation section5 animation section5 animation section5 animation 
-// section5 animation section5 animation section5 animation section5 animation 
-
-
-
 
 
 
@@ -1059,8 +1058,8 @@ var swiper = new Swiper(".section4>.bottom>.mySwiper", {
     },
     speed: 1200, 
     cardsEffect: {
-      perSlideOffset: 12,
-      perSlideRotate: 6, 
+      perSlideOffset: 10,
+      perSlideRotate: 5, 
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -1097,19 +1096,15 @@ var swiper = new Swiper(".section4>.down>.mySwiper", {
 
 
 gsap.from(".section6  ",{
-    // y:500,
     opacity: 0,
-    scale: 1.5  ,
-    stagger: 0.5,
-  
+    duration: 1.5,  
 
     scrollTrigger:{
         scroller: ".main",
         trigger: ".section6 ",
-        start: "top 70%",
+        start: "top 80%",
         end: "bottom bottom",
         // markers: true,
-        scrub: 2
     },
   })
 
@@ -1143,26 +1138,38 @@ var swiper = new Swiper(".section6>.mySwiperr", {
   });
 
 
-
-
-
-
-
-    //    new collection section 8
-var swiper = new Swiper(".nc>.mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-    //   el: ".swiper-pagination",
-    // type: "progressbar",
-      clickable: true,
+  
+  gsap.from(".section12>.mid>.r>p",{
+    scrollTrigger:{
+        scroller: ".main",
+        trigger: ".section12>.mid>.r",
+        start: "top 85%",
+        end: "bottom 98%",
+        // markers: true
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    x: 150,
+    duration: 2,
+    // stagger: .1,
+    opacity: 0,
+    delay: .2,
+    ease: "elastic.out(1, .6)",
+})
+
+gsap.from(".section12>.bot>.left>p, .section12>.bot>.right ",{
+    scrollTrigger:{
+        scroller: ".main",
+        trigger: ".section12>.bot>.left",
+        start: "top 110%",
+        end: "bottom bottom",
+        // markers: true
     },
-  });
+    x: 150,
+    duration: 2,
+    stagger: .2,
+    opacity: 0,
+    delay: .2,
+    ease: "elastic.out(1, .6)",
+})
 
 
 

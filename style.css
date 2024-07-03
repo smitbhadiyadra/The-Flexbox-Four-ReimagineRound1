@@ -384,7 +384,7 @@ nav {
     /* background-color: red; */
     border-radius: 30px;
     overflow: hidden;
-    /* opacity: 0.2; */
+    opacity: 0.8;
     z-index: 9;
 
     .swiper {

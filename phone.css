@@ -381,9 +381,17 @@
 
   @media (max-width: 500px) {
 
+
+    #preloader{
+      height: 110vh;
+      pointer-events: none;
+    }
+
     .text-wrapper{
       font-size: 8vh;
       letter-spacing: 1px;
+      -webkit-background-size: 100px;
+      background-size: 80px;
     }
 
     nav {
@@ -487,6 +495,8 @@
   .buttons > .collection {
     padding: .5rem 1.3rem;
     font-size: .8rem;
+    font-weight: 800;
+    border: 1px solid #fff;
   }
 }
 
@@ -999,7 +1009,7 @@ section5 section5 section5 section5 section5 section5 section5 section5 section5
 
   .r h1 {
     z-index: 99;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: clashSemiBold;
   }
 }
