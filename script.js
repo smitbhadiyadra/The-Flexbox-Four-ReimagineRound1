@@ -32,26 +32,6 @@ function locomotiveScroll(){
 locomotiveScroll();
 
 
-function firstPageAnim(){
-    var tl = gsap.timeline();
-
-
-    tl.from(".text-wrapper", {
-        duration: 3,
-        // scale: 0
-    })
-    .to("#preloader", {
-        duration: 1,
-        y: "-100%",
-        delay: 1.5,
-        ease: "sine.out"
-    });
-}
-
-
-firstPageAnim();
-
-
 
 let width = window.innerWidth;
 
@@ -74,7 +54,7 @@ function heroPageAnimation(){
         duration: 2.5,
         stagger: .06,
         y: -30,
-        delay: 5.4,
+        delay: 6.5,
         ease: "elastic.out(1, .5)",
     },"anime")
     .from("nav>.buttons>.search, nav>.buttons>.shop, nav>.buttons>.login",{
@@ -82,7 +62,7 @@ function heroPageAnimation(){
         duration: 2.5,
         stagger: .06,
         x: 50,
-        delay: 6.5,
+        delay: 7,
         ease: "elastic.out(1, .5)",
     },"anime")
     .from(".hero>.container",{
@@ -91,7 +71,7 @@ function heroPageAnimation(){
         scale: .8,
         stagger: .06,
         y: 200,
-        delay: 6.4,
+        delay: 7.2,
         ease: "elastic.out(.7, .7)",
     },"anime")
     .from(".hero>.main-content>h3, .hero>.main-content>h1, .hero>.main-content>.buttons>.order, .hero>.main-content>.buttons>.collection",{
@@ -99,7 +79,7 @@ function heroPageAnimation(){
         duration: 1.9,
         stagger: .08,
         y: 50,
-        delay: 6.7,
+        delay: 7.8,
         ease: "elastic.out(1, .5)",
     },"anime")
 
@@ -759,20 +739,22 @@ function section8Animation(){
         // ease: "elastic.out(1, .8)",
     })
 
-    gsap.from(".section8>.nc .box>.up, .section8>.nc .box>h1, .section8>.nc .box>h4, .section8>.nc .box>p",{
-        scrollTrigger:{
-            scroller: ".main",
-            trigger: ".section8 .box>p",
-            start: "top 60%",
-            end: "bottom bottom",
-            // markers: true
-        },
-        x: 100,
-        duration: 1,
-        stagger: .1,
-        opacity: 0,
-        // ease: "elastic.out(1, .8)",
-    })
+    if(width>550){
+        gsap.from(".section8>.nc .box>.up, .section8>.nc .box>h1, .section8>.nc .box>h4, .section8>.nc .box>p",{
+            scrollTrigger:{
+                scroller: ".main",
+                trigger: ".section8 .box>p",
+                start: "top 60%",
+                end: "bottom bottom",
+                // markers: true
+            },
+            x: 100,
+            duration: 1,
+            stagger: .1,
+            opacity: 0,
+            // ease: "elastic.out(1, .8)",
+        })
+    }
 }
 
 section8Animation();
@@ -1024,7 +1006,7 @@ if(width<550){
         gsap.from(".section2>.left, .section2>.left>.box>.circle, .section2>.left>.box>.halfCircle, .section2>.left>.box>.overlayArrow, .section2>.left>i, .section2>.left>h1",{
             opacity: 0,
             duration: 1.5,
-            delay: 6.8,
+            delay: 7.5,
             stagger: .1,
             ease: "elastic.out(1, .8)",
             y: 100
@@ -1212,7 +1194,7 @@ var swiper = new Swiper(".section4>.down>.mySwiper", {
 gsap.from(".section6",{
     opacity: 0,
     duration: 1.5,
-    delay: .5,  
+    delay: .2,  
     y: 20,
 
     scrollTrigger:{
@@ -1221,7 +1203,6 @@ gsap.from(".section6",{
         start: "top 80%",
         end: "bottom bottom",
         // markers: true,
-        scrub: .5,
     },
   })
 
@@ -1253,6 +1234,22 @@ var swiper = new Swiper(".section6>.mySwiperr", {
       },
    
   });
+
+
+  gsap.from(".section8>.nc .box>.up, .section8>.nc .box>h1, .section8>.nc .box>h4, .section8>.nc .box>p",{
+    scrollTrigger:{
+        scroller: ".main",
+        trigger: ".section8 .box>p",
+        start: "top 80%",
+        end: "bottom bottom",
+        // markers: true
+    },
+    x: 100,
+    duration: 1,
+    stagger: .1,
+    opacity: 0,
+    // ease: "elastic.out(1, .8)",
+})
 
 
   gsap.from(".section12>.mid>.l>.input-box",{
