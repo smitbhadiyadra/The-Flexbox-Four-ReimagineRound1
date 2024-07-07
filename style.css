@@ -162,36 +162,6 @@ html{
 /* Loader Loader Loader Loader Loader Loader Loader */
 /* Loader Loader Loader Loader Loader Loader Loader */
 
-#preloader {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  z-index: 1000;
-  background-color: #130e0c;
-  flex-direction: column;
-
-}
-
-.text-wrapper {
-  font-weight: bold;
-  background: #262626 -webkit-gradient(linear, left top, right top, from(#262626), to(#262626), color-stop(0.5, #fff)) 0 0 no-repeat;
-  -webkit-background-size: 150px;
-  background-size: 150px;
-  color: rgba(255, 255, 255, 0.1);
-  -webkit-background-clip: text;
-  animation: animate 5s;
-  animation-iteration-count: 1;
-  font-size: 9vw;
-  font-family: 'SP';
-}
-
-
 #loader{
   display: flex;
   justify-content: center;
