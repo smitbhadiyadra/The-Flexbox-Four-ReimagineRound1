@@ -44,6 +44,7 @@ function firstPageAnim(){
         duration: 1,
         y: "-100%",
         delay: 1.5,
+        ease: "sine.out"
     });
 }
 
@@ -125,6 +126,7 @@ function section2Animation(){
             opacity: 0,
             duration: 1.5,
             stagger: .1,
+            delay: .2,
             ease: "elastic.out(1, .8)",
             y: 100
         })
@@ -140,6 +142,7 @@ function section2Animation(){
             opacity: 0,
             duration: 1.5,
             stagger: .1,
+            delay: .3,
             ease: "elastic.out(1, .8)",
             y: 100
         })
@@ -196,6 +199,7 @@ function section3Animation(){
         opacity: 0,
         duration: 1.5,
         stagger: .1,
+        delay: .2,
         ease: "elastic.out(1, .8)",
         x: 200
     })
@@ -213,6 +217,7 @@ function section3Animation(){
         },
         x: 100,
         pin: "true",
+        delay: .2,
         duration: 2,
     })
 
@@ -227,6 +232,7 @@ function section3Animation(){
         },
         x: -100,
         pin: "true",
+        delay: .2,
         duration: 2,
     })
 
@@ -516,6 +522,7 @@ function section4Animation(){
         duration: 1.5,
         stagger: .1,
         scale: .8,
+        delay: .2,
         ease: "elastic.out(1, .8)",
         // x: -100
     })
@@ -533,6 +540,7 @@ function section4Animation(){
                 scrub: 2
             },
             scale: .8,
+            delay: .2,
             duration: 2,
         })
         
@@ -548,6 +556,7 @@ function section4Animation(){
             opacity: 0,
             duration: 2,
             stagger: .1,
+            delay: .2,
             ease: "elastic.out(1, .8)",
         })
     }
@@ -1121,19 +1130,19 @@ if(width<550){
         })
     
 
-        gsap.to(".section4>.top",{
-            scrollTrigger: {
-                scroller: ".main",
-                trigger: ".section4>.top",
-                start: "top 20%",
-                end: "+=25%",
-                pin: true,
-                // markers: true,
-                scrub: 2
-            },
-            scale: .9,
-            duration: 2,
-        })
+        // gsap.to(".section4>.top",{
+        //     scrollTrigger: {
+        //         scroller: ".main",
+        //         trigger: ".section4>.top",
+        //         start: "top 20%",
+        //         end: "+=10%",
+        //         pin: true,
+        //         markers: true,
+        //         scrub: 2
+        //     },
+        //     scale: .9,
+        //     duration: 2,
+        // })
         
         
         gsap.from(".section4>.bottom>.swiper>.swiper-wrapper>.swiper-slide",{
