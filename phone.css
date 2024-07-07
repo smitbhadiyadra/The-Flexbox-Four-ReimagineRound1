@@ -383,8 +383,10 @@
 
 
     #preloader{
-      height: 110vh;
+      position: fixed;
+      height: 100%;
       pointer-events: none;
+      scroll-behavior: none;
     }
 
     .text-wrapper{
@@ -392,6 +394,7 @@
       letter-spacing: 1px;
       -webkit-background-size: 100px;
       background-size: 80px;
+      pointer-events: none;
     }
 
     nav {
